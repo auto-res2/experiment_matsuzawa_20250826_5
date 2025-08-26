@@ -464,6 +464,68 @@
       "title": "Retrospective Adversarial Replay for Continual Learning"
     }
   ],
+  "reference_research_study_list": [
+    {
+      "title": "Ss-il: Separated softmax for incremental learning"
+    },
+    {
+      "title": "Memory aware synapses: Learning what (not) to forget"
+    },
+    {
+      "title": "Gradient based sample selection for online continual learning"
+    },
+    {
+      "title": "Deep rewiring: Training very sparse deep networks"
+    },
+    {
+      "title": "Measuring and regularizing networks in function space"
+    },
+    {
+      "title": "Coresets via bilevel optimization for continual learning and streaming"
+    },
+    {
+      "title": "The malicious use of artificial intelligence: Forecasting, prevention, and mitigation"
+    },
+    {
+      "title": "Dark experience for general continual learning: a strong, simple baseline"
+    },
+    {
+      "title": "An analysis of deep neural network models for practical applications"
+    },
+    {
+      "title": "Co2l: Contrastive continual learning"
+    },
+    {
+      "title": "Using hindsight to anchor past knowledge in continual learning"
+    },
+    {
+      "title": "Efficient lifelong learning with a-gem"
+    },
+    {
+      "title": "On tiny episodic memories in continual learning"
+    },
+    {
+      "title": "Long live the lottery: The existence of winning tickets in lifelong learning"
+    },
+    {
+      "title": "Imagenet: A large-scale hierarchical image database"
+    },
+    {
+      "title": "Sparse networks from scratch: Faster training without losing performance"
+    },
+    {
+      "title": "Rtmobile: Beyond real-time mobile acceleration of rnns for speech recognition"
+    },
+    {
+      "title": "Network pruning via transformable architecture search"
+    },
+    {
+      "title": "Rigging the lottery: Making all tickets winners"
+    },
+    {
+      "title": "The lottery ticket hypothesis: Finding sparse, trainable neural networks"
+    }
+  ],
   "new_method": {
     "method": "Motivation:\nCommodity IoT sensors and wearables now include tiny NPUs that ship with vendor-frozen diffusion or GAN backbones.  For lifelong learning on such devices, the chief unsolved problem is:  “How can we rehearse hundreds of tasks while keeping per-example cost well below the tens of kilobytes that even JPEG or feature-buffers require, and without representation drift that invalidates what we stored yesterday?”  Existing continual-compression (AQM, dataset distillation, i-CTRL, LiDER) still need ≥64–128 B per sample, grow with task-count, or constantly adapt generators causing drift.  SGHR-Lite-v2 targets <20 B, strictly sub-linear growth, formal accuracy guarantees, and built-in privacy.\n\nMethodology (SGHR-Lite-v2):\n1. Two-Tier Seed Coding (6 B per sample)\n   a. Tier-A 32-bit locality-sensitive hash h₁(x)=s₁ that plays dual role: RNG seed + semantic neighbourhood index.  Guarantees collision-free negatives by choosing a p-stable LSH radius below intra-class variance.\n   b. Tier-B 16-bit task-adaptive Cayley code c(x).  A lightweight differentiable BCH encoder trains online so that (s₁⊕c) stays uniformly distributed in the vendor RNG space; the code is 3-bit-correctable and invertible given h₁, hence seeds never become stale.\n\n2. Hierarchical Residual Tokens (4 bit per sample, shared LoRA)\n   • A streaming K-Medoids on CLIP embeddings selects ≤32 medoids per task (indices only).  A single rank-1 LoRA residual δzₖ per medoid adapts the frozen diffusion UNet.  Each stored sample therefore needs only a 4-bit medoid-id instead of per-sample LoRA.\n\n3. Error-Bounded Budgeting\n   • When a new image arrives, reconstruct from (s₁⊕c, id) and compute perceptual error e(x).  If e≤ε save only 6-B seed+token; else allocate one additional 8-B delta-seed drawn from an orthogonal hash family.  A PAC-style result shows 𝔼[m]≤8+8·Pr[e>ε]+0.5 bytes while test accuracy drops ≤δ.  This is the first closed-form bit/accuracy certificate for generative replay.\n\n4. Drift-Free Generator Updates\n   • Orthogonal-LoRA-Merge (OLM): each task trains a rank-R adapter in the null-space of the accumulated gradient basis (extends InfLoRA from linear layers to UNet convs).  The adapter is analytically merged and discarded, keeping constant model size and provably zero interference with earlier seeds → no replay drift.\n\n5. Differential-Privacy-by-Construction\n   • Stored record = (seed⊕code, 4-bit cluster-id).  One-bit randomized response per code-bit yields (ε≈0.3,0)-DP against any adversary without the generator.  No raw pixels are ever stored and no extra noise is injected into model weights.\n\n6. Edge-Compiled Runtime\n   • Hash/XOR/ECC implemented as SIMD bit-ops (<20 µs).  Seed→image uses vendor CoreML; replay (image+adapter) <110 ms on Cortex-A78, <18 ms on Apple M2-E.\n\nNovelty vs Prior Work\n• First CL replay whose memory is provably sub-linear in both tasks and classes; buffers (ER, LiDER, LPR) and statistic-based methods (i-CTRL) grow ≥O(T).\n• Generator never retrains (unlike AQM, dataset distillation, GCL) ⇒ no representation drift; seeds remain valid for years.\n• Adds formal PAC bit-budget bound—absent from all generative replay/compression works.\n• Shrinks per-sample LoRA from ≥64 B (InfLoRA) to 4 bits via hierarchical residual sharing.\n• Provides DP guarantee without gradient noise—unexplored in continual-compression literature.\n\nExpected Impact:\n• Enables lifelong vision or multimodal models on 128 KB micro-controllers (smart-home sensors, AR glasses, automotive).  At 20 B/sample, a 50 K-image lifetime fits in <1 MB.\n• Bit-budget/accuracy certificates plus ECC yield verifiable audit trails, easing deployment in regulated sectors (medical, industrial safety).\n• Immediate deployment: uses existing CoreML/Android NN APIs; no new silicon.\n• Privacy guarantee removes legal hurdles for consumer devices and federated learning.\n• Hierarchical residual tokens can generalize to diffusion-based TTS or audio replay, paving the way for multimodal continual learning without additional memory.",
     "experimental_design": {
