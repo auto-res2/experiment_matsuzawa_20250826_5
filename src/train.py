@@ -16,15 +16,13 @@ The code uses only relative imports and depends only on
 packages listed in requirements.txt.
 """
 from __future__ import annotations
-import os, time, random, math, json, pathlib
-from dataclasses import dataclass
+import time, math, json, pathlib
 from typing import List, Tuple, Dict
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Subset
-import torchvision
 import torchvision.transforms as T
 import numpy as np
 
