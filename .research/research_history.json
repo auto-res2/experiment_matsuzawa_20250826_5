@@ -6,5 +6,82 @@
     "efficient hierarchical generative models",
     "fast diffusion sampling",
     "multi-scale diffusion optimization"
+  ],
+  "research_study_list": [
+    {
+      "title": "Simple Hierarchical Planning with Diffusion"
+    },
+    {
+      "title": "Hyperbolic Diffusion Embedding and Distance for Hierarchical Representation Learning"
+    },
+    {
+      "title": "Hierarchical Integration Diffusion Model for Realistic Image Deblurring"
+    },
+    {
+      "title": "Coarse-to-Fine: a Hierarchical Diffusion Model for Molecule Generation in 3D"
+    },
+    {
+      "title": "Faster Local Solvers for Graph Diffusion Equations"
+    },
+    {
+      "title": "Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference"
+    },
+    {
+      "title": "DeepCache: Accelerating Diffusion Models for Free"
+    },
+    {
+      "title": "Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching"
+    },
+    {
+      "title": "Leveraging Early-Stage Robustness in Diffusion Models for Efficient and High-Quality Image Synthesis"
+    },
+    {
+      "title": "Training-Free Adaptive Diffusion with Bounded Difference Approximation Strategy"
+    },
+    {
+      "title": "Benchmarks, Algorithms, and Metrics for Hierarchical Disentanglement"
+    },
+    {
+      "title": "Benchmarks, Algorithms, and Metrics for Hierarchical Disentanglement"
+    },
+    {
+      "title": "Variational Inference with Locally Enhanced Bounds for Hierarchical Models"
+    },
+    {
+      "title": "Variational Inference with Locally Enhanced Bounds for Hierarchical Models"
+    },
+    {
+      "title": "Generalized Doubly Reparameterized Gradient Estimators"
+    },
+    {
+      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
+    },
+    {
+      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models"
+    },
+    {
+      "title": "Reverse Transition Kernel: A Flexible Framework to Accelerate Diffusion Inference"
+    },
+    {
+      "title": "Fast ODE-based Sampling for Diffusion Models in Around 5 Steps"
+    },
+    {
+      "title": "Semi-Implicit Denoising Diffusion Models (SIDDMs)"
+    },
+    {
+      "title": "Learning multi-scale local conditional probability models of images"
+    },
+    {
+      "title": "Learning multi-scale local conditional probability models of images"
+    },
+    {
+      "title": "Generative Powers of Ten"
+    },
+    {
+      "title": "OMS-DPM: Optimizing the Model Schedule for Diffusion Probabilistic Models"
+    },
+    {
+      "title": "MultiDiffusion: Fusing Diffusion Paths for Controlled Image Generation"
+    }
   ]
 }
