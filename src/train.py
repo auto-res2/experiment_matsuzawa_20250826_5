@@ -251,7 +251,9 @@ class DFDiffUNetWrapper(nn.Module):
         assert self.have_cache.item() == 1, "Cache not initialized; call forward_first_step first."
         B = x.size(0)
         t_embed = self.encode_time(t)
-        frac_full_accum = 0.0
+        # Accumulate both a tensor (for differentiable sparsity loss) and a float for stats
+        frac_full_accum = torch.zeros((), device=x.device)
+        frac_full_accum_stat = 0.0
         for i, (dU, R, tproj) in enumerate(zip(self.delta_blocks, self.routers, self.t_proj)):
             Fi_prev = self.quant.dequantize(self.cache_q[i], self.cache_s[i])
             t_e = tproj(t_embed)
@@ -259,12 +261,17 @@ class DFDiffUNetWrapper(nn.Module):
             # Always compute Fi_full for simplicity/robustness
             Fi_full = self.base.forward_block_i(i, Fi_prev, t, cond)
             dFi = dU(Fi_prev, t_e)
-            Fi = torch.where(z.view(B, 1, 1, 1).bool(), Fi_full, Fi_prev + dFi)
+            Fi_delta = Fi_prev + dFi
+            Fi = torch.where(z.view(B, 1, 1, 1).bool(), Fi_full, Fi_delta)
+            # Update cache with detached tensors to avoid back-propping through quantization
             q, s = self.quant.quantize(Fi.detach())
             self.cache_q[i], self.cache_s[i] = q, s
-            frac_full_accum += z.float().mean().item()
+            # For loss (differentiable): encourage sparsity via mean router prob
+            frac_full_accum = frac_full_accum + p.mean()
+            # For stats (non-differentiable): actual hard routing fraction
+            frac_full_accum_stat += float(z.float().mean().item())
         if router_stats is not None:
-            router_stats['frac_full'].append(frac_full_accum / len(self.delta_blocks))
+            router_stats['frac_full'].append(frac_full_accum_stat / len(self.delta_blocks))
             router_stats['frac_delta'].append(1.0 - router_stats['frac_full'][-1])
         out = self.base.final_from_features([
             self.quant.dequantize(self.cache_q[i], self.cache_s[i]) for i in range(len(self.delta_blocks))
@@ -289,7 +296,7 @@ class TrainConfig:
     seed: int = 123
     device: str = "auto"
     fp16: bool = False
-    images_dir: str = ".research/iteration3/images"
+    images_dir: str = ".research/iteration4/images"
     models_dir: str = "models"
 
 

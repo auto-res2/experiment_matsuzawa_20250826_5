@@ -5,7 +5,7 @@ import yaml
 from .train import TrainConfig, train_distill_proxy, build_models, pick_device
 from .evaluate import RunConfig, QualityCfg, RobustCfg, run_memory_latency, run_quality_proxy, run_robustness
 
-IMAGES_DIR = ".research/iteration3/images"
+IMAGES_DIR = ".research/iteration4/images"
 RESULTS_DIR = ".research/iteration2"
 MODELS_DIR = "models"
 
@@ -80,7 +80,7 @@ def main():
                           images_dir=IMAGES_DIR, results_dir=RESULTS_DIR)
         run_robustness(rocfg, teacher=train_res["teacher"], student=train_res["student"])
 
-        print("\nQuick test completed. Inspect .research/iteration3/images for results and images.")
+        print("\nQuick test completed. Inspect .research/iteration4/images for results and images.")
         return
 
     if args.plan == "train_only":
@@ -138,7 +138,7 @@ def main():
         rocfg = RobustCfg(res=res, steps=steps, batch=batch, device=device, fp16=fp16,
                           images_dir=IMAGES_DIR, results_dir=RESULTS_DIR)
         run_robustness(rocfg, teacher=train_res["teacher"], student=train_res["student"])
-        print("\nAll experiments completed. Inspect .research/iteration3/images for results and images.")
+        print("\nAll experiments completed. Inspect .research/iteration4/images for results and images.")
         return
 
 
