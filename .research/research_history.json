@@ -591,6 +591,68 @@
       }
     }
   ],
+  "reference_research_study_list": [
+    {
+      "title": "Xcit: Cross-covariance image transformers."
+    },
+    {
+      "title": "Prefix sums and their applications."
+    },
+    {
+      "title": "Mmdetection: Open mmlab detection toolbox and benchmark."
+    },
+    {
+      "title": "MMSegmentation: Openmmlab semantic segmentation toolbox and benchmark."
+    },
+    {
+      "title": "Deformable convolutional networks."
+    },
+    {
+      "title": "Coatnet: Marrying convolution and attention for all data sizes."
+    },
+    {
+      "title": "Flashattention-2: Faster attention with better parallelism and work partitioning."
+    },
+    {
+      "title": "Flashattention: Fast and memory- efficient exact attention with io-awareness."
+    },
+    {
+      "title": "Imagenet: A large-scale hierarchical image database."
+    },
+    {
+      "title": "Davit: Dual attention vision transformers."
+    },
+    {
+      "title": "Scaling up your kernels to 31x31: Revisiting large kernel design in cnns."
+    },
+    {
+      "title": "Cswin transformer: A general vision transformer backbone with cross-shaped windows."
+    },
+    {
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale."
+    },
+    {
+      "title": "Sigmoid-weighted linear units for neural network function approximation in reinforcement learning."
+    },
+    {
+      "title": "Rmt: Retentive networks meet vision transformers."
+    },
+    {
+      "title": "Hungry hungry hippos: Towards language modeling with state space models."
+    },
+    {
+      "title": "Mamba: Linear-time sequence modeling with selective state spaces."
+    },
+    {
+      "title": "Hippo: Recurrent memory with optimal polynomial projections."
+    },
+    {
+      "title": "On the parameterization and initialization of diagonal state space models."
+    },
+    {
+      "title": "Efficiently modeling long sequences with structured state spaces."
+    }
+  ],
   "new_method": {
     "method": "Motivation:\n1. Memory, not compute, is fast becoming the hard bottleneck for vision SSMs. Vision-Mamba already eliminates quadratic attention but still carries a 24-layer activation stack (training) and per-layer (A,B,C,Δ) tensors (inference), so it cannot run on sub-GB devices or train very high-res images on a single GPU.\n2. Prior efficiency work is FLOP–centred (MSVMamba, Flash-Scan) or sequence-length-centred (SS2D/MS2D). No published vision SSM tackles *parameter duplication* or *activation checkpoint-free reversibility*.\n3. The embedded-AI market (phones, drones, wearables) and emerging gigapixel applications need a design that *trades a few extra ALU ops for massive weight / activation savings*.\n\nMethodology:\nWe propose RevSparse-ViM, a drop-in extension to public Vision-Mamba that combines three orthogonal innovations.\n\nA. Reversible Bi-Mamba Block (training-time activations ↓≈50 %)\n   • Split channels (x1,x2) and wrap the standard Bi-Mamba path in an additive-coupling scheme: y1 = x1 + F(x2),  y2 = x2 + G(y1).\n   • Back-prop stores only the tiny in-kernel SSM running state; all feature-maps are recomputed on-the-fly.\n   • Provide a fused Triton kernel rev_selective_scan that performs forward + inverse bidirectional scan in one GPU pass (≤7 % time overhead).\n\nB. Sparse Shared-State Parameterisation (weights & KV-cache ↓3–5×)\n   • Empirically, per-layer (A,B,C,Δ) are highly correlated.  We factorise them *stage-wise*:  A_i = Σ_k αᵢk Â_k (rank K≪D).  Same for B,C,Δ.\n   • Store bases (Â,B̂,Ĉ,Δ̂) once per stage in fp16; mixture weights α in 4-bit NF4/fp8.  Inference keeps only K+4 tensors per stage, slashing SRAM.\n   • Finetuning adds Group-Lasso on α; rows with >90 % zeros are pruned, giving further 1.3–1.6× shrinkage with <0.2 % top-1 loss.\n\nC. Token-Aware Scan Pruning (run-time sequence-len ↓10–40 %)\n   • A 3×3 DW-Conv predicts per-patch saliency.  Tokens whose score<τ skip F,G and receive a learned bias; skipped tokens have no stored grads thanks to reversibility.\n   • Anneal τ during pre-training; expose τ as a run-time knob so integrators can trade accuracy for memory/latency.\n\nCode additions (all to open-source ViM repo)\n  • vim/rev_bimamba.py          – reversible wrapper with forward()/inverse()\n  • triton/rev_scan.cu          – fused selective-scan + inverse kernel\n  • ssm/param_sparse.py         – stage-wise low-rank parameters with NF4 packing\n  • builders/build_rev_sparse() – config helper (reversible=True, rank=K, τ)\n\nHow it differs from prior work\n• No vision SSM to date is reversible; existing memory reductions rely on activation checkpointing (extra passes) or gradient-checkpointing tricks.\n• Parameter sharing in SSMs has been studied only for language (LoRa-style) and never tied to KV-cache compression.\n• Scan-level token skipping is novel for SSM backbones; prior works prune channels or down-sample scans, not *runtime* sequence length.\n\nExpected Impact\n1. Training: 45–60 % lower activation memory enables 224² batch 2048 on A100-40 GB and fine-tuning 1024² on a single H100-80 GB without checkpointing.\n2. Inference: 35–50 % lower SRAM/HBM (weights+cache) with ≈3 % latency hit fits 512² images on 8 GB consumer GPUs and <1 GB edge accelerators.\n3. The reversible wrapper and shared-state trick port directly to language-/audio-Mamba, shrinking KV cache by 3–4×.\n4. Makes gigapixel pathology, UAV navigation and always-on AR feasible on commodity or on-chip memory-limited hardware, opening new deployment domains for SSMs while remaining orthogonal to compute-centric accelerations.\n",
     "experimental_design": {
