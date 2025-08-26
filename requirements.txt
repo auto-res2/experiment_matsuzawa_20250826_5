@@ -1,1 +1,9 @@
-# Please list the required python packages.
+torch>=2.1
+torchvision>=0.16
+numpy>=1.23
+matplotlib>=3.7
+seaborn>=0.12
+pandas>=2.0
+tqdm>=4.65
+PyYAML>=6.0
+pillow>=9.5

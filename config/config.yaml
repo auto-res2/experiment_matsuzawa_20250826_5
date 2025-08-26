@@ -1,0 +1,18 @@
+# Default configuration for DF-Diff toy experiments
+# Paths
+images_dir: .research/iteration1/images
+results_dir: .research/iteration1
+models_dir: models
+
+# Device and precision
+device: auto
+fp16: false
+
+# Data / model settings
+res: 32
+steps: 12
+batch: 1
+iters: 120
+feature_bits: 8
+router_lambda: 0.001
+delta_mult: 1.0
