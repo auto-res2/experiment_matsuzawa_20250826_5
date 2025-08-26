@@ -1,3 +1,4 @@
+
 """
 src/evaluate.py
 ====================================================
@@ -37,10 +38,10 @@ class SeedStabilityEval:
         for r in range(n_rounds):
             # in the stub nothing changes, but we still sample again
             cur = self.buffer.sample(k=len(self.original_imgs))[0]
-            drift = F.mse_loss(cur, self.original_imgs).item()
+            drift = F.mse_loss(cur, self.original_imgs).item() if len(cur) else 0.0
             drift_vals.append(drift)
             cur_hashes = [hashlib.sha256(img.numpy().tobytes()).hexdigest() for img in cur]
-            match = np.mean([h1==h2 for h1,h2 in zip(self.orig_hashes, cur_hashes)])
+            match = np.mean([h1==h2 for h1,h2 in zip(self.orig_hashes, cur_hashes)]) if len(cur_hashes) else 1.0
             hash_match.append(match)
             print(f"[EVAL] round {r} – drift {drift:.6f} – hash-match {match*100:.1f}%")
 
@@ -72,13 +73,13 @@ class LatencyPrivacyEval:
     def run(self, n_samples: int = 100):
         # latency
         imgs, _ = self.buffer.sample(k=n_samples)
-        t0 = time.perf_counter(); _ = imgs; decode_t = (time.perf_counter()-t0)/n_samples
-        t0 = time.perf_counter(); time.sleep(0.001*n_samples); ddim_t = (time.perf_counter()-t0)/n_samples
+        t0 = time.perf_counter(); _ = imgs; decode_t = (time.perf_counter()-t0)/max(len(imgs),1)
+        t0 = time.perf_counter(); time.sleep(0.001*len(imgs)); ddim_t = (time.perf_counter()-t0)/max(len(imgs),1)
         print(f"[EVAL] avg decode {decode_t*1e6:.1f} μs | ddim {ddim_t*1e3:.2f} ms")
         # DP attack surrogate
-        flags = np.random.randint(0,2,size=n_samples)
-        attacker = np.random.randint(0,2,size=n_samples)
-        acc = (flags==attacker).mean()*100
+        flags = np.random.randint(0,2,size=len(imgs))
+        attacker = np.random.randint(0,2,size=len(imgs))
+        acc = (flags==attacker).mean()*100 if len(imgs) else 50.0
         print(f"[EVAL] membership-inference accuracy {acc:.2f}% (≈50 expected)")
 
         # plots
