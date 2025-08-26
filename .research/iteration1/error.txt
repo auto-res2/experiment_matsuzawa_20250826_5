@@ -1,0 +1,4 @@
+/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/evaluate.py:173: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels(list(algos.keys()))
+/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/evaluate.py:253: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels(list(scheds.keys()))
