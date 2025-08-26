@@ -4,7 +4,7 @@ train.py – training utilities for RevSparse-ViM toy pipeline
 Implements
   • build_model(cfg)   – returns initialised nn.Module
   • train(cfg, model, loaders, device) – runs the full training loop
-      * writes paper-ready loss curve .pdf in .research/iteration2/images
+      * writes paper-ready loss curve .pdf in .research/iteration3/images
       * stores final weights under models/{cfg.model.name}.pt
 
 NOTE
@@ -143,7 +143,8 @@ class ToyRevSparseNet(nn.Module):
 # 2.  builders & train loop
 # ---------------------------------------------------------------------
 
-IMAGE_DIR = Path('.research/iteration2/images')  # centralise image path
+# All experiment images are now stored under iteration3 ------------
+IMAGE_DIR = Path('.research/iteration3/images')  # centralise image path
 
 
 def build_model(cfg) -> nn.Module:
@@ -170,7 +171,10 @@ def train(cfg, model: nn.Module, loaders: Tuple, device):
     train_loader, val_loader = loaders
     model.to(device)
     criterion = nn.CrossEntropyLoss()
-    optimiser = torch.optim.AdamW(model.parameters(), lr=cfg.optim.lr)
+
+    # Ensure learning rate is a float (YAML treats 1e-3 as a string)
+    lr = float(cfg.optim.lr)
+    optimiser = torch.optim.AdamW(model.parameters(), lr=lr)
 
     n_steps = len(train_loader) * cfg.train.epochs
     loss_history: List[float] = []
