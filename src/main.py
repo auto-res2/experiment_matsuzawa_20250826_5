@@ -15,14 +15,19 @@ from . import evaluate as ev
 
 
 def load_cfg() -> dict:
-    cfg_path = Path('config/experiment.yaml')
+    """Load YAML config and return a SimpleNamespace tree."""
+    # Updated to load the existing config file.
+    cfg_path = Path('config/config.yaml')
+    if not cfg_path.exists():
+        raise FileNotFoundError(f"Config file not found at {cfg_path.resolve()}")
+
     with cfg_path.open('r') as f:
         cfg = yaml.safe_load(f)
     # convert to simple namespace-like object for dot access
     from types import SimpleNamespace
     def _rec(d):
         if isinstance(d, dict):
-            return SimpleNamespace(**{k: _rec(v) for k,v in d.items()})
+            return SimpleNamespace(**{k: _rec(v) for k, v in d.items()})
         else:
             return d
     return _rec(cfg)

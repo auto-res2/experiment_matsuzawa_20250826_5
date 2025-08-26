@@ -11,7 +11,7 @@ import seaborn as sns
 
 sns.set_style("whitegrid")
 
-from .train import _ensure_dir, _bytes_to_mb
+from .train import _ensure_dir, _bytes_to_mb, IMAGE_DIR
 
 
 def evaluate(cfg, model, loader, device):
@@ -29,14 +29,14 @@ def evaluate(cfg, model, loader, device):
     print(f"Evaluation accuracy: {acc:.2f} %")
 
     # bar plot ------------------------------------------------------
-    _ensure_dir(Path('.research/iteration1/images'))
+    _ensure_dir(IMAGE_DIR)
     fig, ax = plt.subplots(figsize=(3,3))
     ax.bar(['RevSparse'], [acc], color='tab:green')
     ax.set_ylim(0, 100)
     ax.set_ylabel('Accuracy (%)')
     ax.set_title('Validation accuracy')
     plt.tight_layout()
-    plt.savefig('.research/iteration1/images/val_accuracy.pdf', bbox_inches='tight')
+    plt.savefig(IMAGE_DIR / 'val_accuracy.pdf', bbox_inches='tight')
     plt.close(fig)
 
     if device.type == 'cuda':

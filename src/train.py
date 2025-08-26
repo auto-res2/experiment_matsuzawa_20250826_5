@@ -4,7 +4,7 @@ train.py – training utilities for RevSparse-ViM toy pipeline
 Implements
   • build_model(cfg)   – returns initialised nn.Module
   • train(cfg, model, loaders, device) – runs the full training loop
-      * writes paper-ready loss curve .pdf in .research/iteration1/images
+      * writes paper-ready loss curve .pdf in .research/iteration2/images
       * stores final weights under models/{cfg.model.name}.pt
 
 NOTE
@@ -143,6 +143,9 @@ class ToyRevSparseNet(nn.Module):
 # 2.  builders & train loop
 # ---------------------------------------------------------------------
 
+IMAGE_DIR = Path('.research/iteration2/images')  # centralise image path
+
+
 def build_model(cfg) -> nn.Module:
     if cfg.model.name == 'baseline':
         return ToyBaselineNet(num_classes=cfg.data.num_classes)
@@ -193,14 +196,14 @@ def train(cfg, model: nn.Module, loaders: Tuple, device):
     torch.save(model.state_dict(), save_path)
 
     # plot ----------------------------------------------------------
-    _ensure_dir(Path('.research/iteration1/images'))
+    _ensure_dir(IMAGE_DIR)
     fig, ax = plt.subplots(figsize=(4,3))
     ax.plot(range(1, cfg.train.epochs+1), loss_history, 'o-')
     ax.set_xlabel('Epoch')
     ax.set_ylabel('Training loss')
     ax.set_title('Training loss curve')
     plt.tight_layout()
-    plt.savefig('.research/iteration1/images/training_loss.pdf', bbox_inches='tight')
+    plt.savefig(IMAGE_DIR / 'training_loss.pdf', bbox_inches='tight')
     plt.close(fig)
 
     # memory --------------------------------------------------------
