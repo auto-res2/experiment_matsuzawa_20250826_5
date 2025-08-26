@@ -1,0 +1,2 @@
+resolution,steps,batch,fp16,feature_bits,router_lambda,delta_mult,baseline_total_s,baseline_avg_step_ms,baseline_peak_mem_gb,dfdiff_total_s,dfdiff_avg_step_ms,dfdiff_peak_mem_gb,dfdiff_avg_frac_full
+32,12,1,False,8,0.001,1.0,0.0178,1.458,0.0175,0.0398,3.282,0.0179,0.0
