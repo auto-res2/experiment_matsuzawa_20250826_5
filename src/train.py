@@ -130,7 +130,7 @@ def run_training(cfg: dict) -> dict:
 
     fig2, ax2 = plt.subplots(figsize=(6,4))
     sns.lineplot(x=list(range(1,cfg["n_tasks"]+1)), y=mem_hist, marker="o", ax=ax2)
-    ax2.set_xlabel("Task"); ax2.set_ylabel("Memory (kB")
+    ax2.set_xlabel("Task"); ax2.set_ylabel("Memory (kB)")
     save_pdf(fig2, f"{IMG_DIR}/memory_growth.pdf"); plt.close(fig2)
 
     return {"accuracy": acc_hist, "memory_kb": mem_hist}
