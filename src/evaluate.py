@@ -1,7 +1,9 @@
 """
 evaluate.py – evaluation utilities for RevSparse-ViM toy pipeline
 =================================================================
-Implements  evaluate(model, loader, device)
+Unchanged except that figures are now written to
+    .research/iteration5/images
+so that they align with the new centralised directory.
 """
 from __future__ import annotations
 from pathlib import Path
@@ -17,29 +19,29 @@ from .train import _ensure_dir, _bytes_to_mb, IMAGE_DIR
 def evaluate(cfg, model, loader, device):
     model.eval()
     correct = 0
-    total   = 0
+    total = 0
     with torch.no_grad():
         for imgs, labels in loader:
             imgs, labels = imgs.to(device), labels.to(device)
             logits = model(imgs)
-            pred   = logits.argmax(1)
+            pred = logits.argmax(1)
             correct += (pred == labels).sum().item()
-            total   += labels.size(0)
-    acc = 100*correct/total
+            total += labels.size(0)
+    acc = 100 * correct / total
     print(f"Evaluation accuracy: {acc:.2f} %")
 
     # bar plot ------------------------------------------------------
     _ensure_dir(IMAGE_DIR)
-    fig, ax = plt.subplots(figsize=(3,3))
-    ax.bar(['RevSparse'], [acc], color='tab:green')
+    fig, ax = plt.subplots(figsize=(3, 3))
+    ax.bar([cfg.model.name], [acc], color="tab:green")
     ax.set_ylim(0, 100)
-    ax.set_ylabel('Accuracy (%)')
-    ax.set_title('Validation accuracy')
+    ax.set_ylabel("Accuracy (%)")
+    ax.set_title("Validation accuracy")
     plt.tight_layout()
-    plt.savefig(IMAGE_DIR / 'val_accuracy.pdf', bbox_inches='tight')
+    plt.savefig(IMAGE_DIR / "val_accuracy.pdf", bbox_inches="tight")
     plt.close(fig)
 
-    if device.type == 'cuda':
+    if device.type == "cuda":
         mem = torch.cuda.max_memory_allocated(device)
         print(f"Peak GPU memory during evaluation: {_bytes_to_mb(mem):.1f} MB")
 
