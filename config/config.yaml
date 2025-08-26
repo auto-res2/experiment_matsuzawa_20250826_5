@@ -1,0 +1,10 @@
+# Default hyper-parameters – edit to run larger experiments
+exp1:
+  num_episodes: 20
+  seed: 0
+exp2:
+  n_samples: 256
+  epochs: 10
+  batch_size: 64
+exp3:
+  n_segments: 200
