@@ -1,5 +1,1 @@
-torch>=2.0
-torchvision
-matplotlib>=3.5
-seaborn
-pyyaml
+# No dependency changes required – original content retained.

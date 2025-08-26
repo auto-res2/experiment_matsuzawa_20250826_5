@@ -1,14 +1,10 @@
 """
 train.py – training utilities for RevSparse-ViM toy pipeline
 ===========================================================
-(Fixes)
-  • Corrected the custom autograd implementation that caused an
-    infinite recursive call stack and finally exhausted the GPU
-    memory.
-  • All experiment images are now stored in
-        .research/iteration5/images
-    (was …/iteration4/… before).
-  • No other behavioural changes – the public API is preserved.
+• All experiment images are now stored in
+      .research/iteration6/images
+  (was …/iteration5/… before).
+• No other behavioural changes – the public API is preserved.
 """
 from __future__ import annotations
 from pathlib import Path
@@ -203,8 +199,8 @@ class ToyRevSparseNet(nn.Module):
 # 2.  builders & train loop
 # ---------------------------------------------------------------------
 
-# All experiment images are now stored under iteration5 ---------------
-IMAGE_DIR = Path(".research/iteration5/images")  # centralised image path
+# All experiment images are now stored under iteration6 ---------------
+IMAGE_DIR = Path(".research/iteration6/images")  # centralised image path
 
 
 def build_model(cfg) -> nn.Module:

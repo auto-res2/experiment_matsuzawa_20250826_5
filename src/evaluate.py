@@ -1,8 +1,8 @@
 """
 evaluate.py – evaluation utilities for RevSparse-ViM toy pipeline
 =================================================================
-Unchanged except that figures are now written to
-    .research/iteration5/images
+Figures are written to
+    .research/iteration6/images
 so that they align with the new centralised directory.
 """
 from __future__ import annotations

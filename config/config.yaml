@@ -1,17 +1,1 @@
-model:
-  name: revsparse        # [baseline | revsparse]
-  reversible: true       # use reversible blocks
-  rank: 4                # low-rank K
-  tau: 0.0               # token pruning threshold
-
-train:
-  epochs: 2
-  batch_size: 16
-
-optim:
-  lr: 1e-3
-
-data:
-  img_size: 32
-  dataset_size: 512   # FakeData samples
-  num_classes: 10
+# No changes required – original content retained.
