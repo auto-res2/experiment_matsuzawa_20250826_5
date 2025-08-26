@@ -4,7 +4,7 @@ train.py – training utilities for RevSparse-ViM toy pipeline
 Implements
   • build_model(cfg)   – returns initialised nn.Module
   • train(cfg, model, loaders, device) – runs the full training loop
-      * writes paper-ready loss curve .pdf in .research/iteration3/images
+      * writes paper-ready loss curve .pdf in .research/iteration4/images
       * stores final weights under models/{cfg.model.name}.pt
 
 NOTE
@@ -80,10 +80,30 @@ class _RevAdditiveCoupling(torch.autograd.Function):
             return x1.grad, x2.grad, None, None
 
 class RevBlock(nn.Module):
+    """Reversible additive coupling block.
+
+    The incoming tensor is split channel-wise into two halves, therefore the
+    internal subnetworks operate on `channels // 2` feature maps.  Using the
+    full channel count here (as done previously) leads to a mismatch between
+    the expected and actual number of channels during convolution – precisely
+    the runtime error observed in CI.
+    """
+
     def __init__(self, channels: int):
         super().__init__()
-        self.f = nn.Sequential(nn.Conv2d(channels, channels, 3, padding=1), nn.ReLU())
-        self.g = nn.Sequential(nn.Conv2d(channels, channels, 3, padding=1), nn.ReLU())
+        if channels % 2 != 0:
+            raise ValueError("`channels` must be even for reversible coupling.")
+        inner_c = channels // 2
+        # Each sub-network keeps the tensor size constant (C/2 → C/2)
+        self.f = nn.Sequential(
+            nn.Conv2d(inner_c, inner_c, 3, padding=1),
+            nn.ReLU()
+        )
+        self.g = nn.Sequential(
+            nn.Conv2d(inner_c, inner_c, 3, padding=1),
+            nn.ReLU()
+        )
+
     def forward(self, x):
         x1, x2 = torch.chunk(x, 2, dim=1)
         y1, y2 = _RevAdditiveCoupling.apply(x1, x2, self.f, self.g)
@@ -143,8 +163,8 @@ class ToyRevSparseNet(nn.Module):
 # 2.  builders & train loop
 # ---------------------------------------------------------------------
 
-# All experiment images are now stored under iteration3 ------------
-IMAGE_DIR = Path('.research/iteration3/images')  # centralise image path
+# All experiment images are now stored under iteration4 ---------------
+IMAGE_DIR = Path('.research/iteration4/images')  # centralised image path
 
 
 def build_model(cfg) -> nn.Module:
