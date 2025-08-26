@@ -6,5 +6,82 @@
     "lightweight diffusion networks",
     "efficient latent diffusion",
     "diffusion transformer memory"
+  ],
+  "research_study_list": [
+    {
+      "title": "Score Approximation, Estimation and Distribution Recovery of Diffusion Models on Low-Dimensional Data"
+    },
+    {
+      "title": "Diffusion Models Beat GANs on Image Synthesis"
+    },
+    {
+      "title": "Diffusion Models Beat GANs on Image Synthesis"
+    },
+    {
+      "title": "Cold Diffusion: Inverting Arbitrary Image Transforms Without Noise"
+    },
+    {
+      "title": "Diffusion Models Without Attention"
+    },
+    {
+      "title": "Hollowed Net for On-Device Personalization of Text-to-Image Diffusion Models"
+    },
+    {
+      "title": "SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds"
+    },
+    {
+      "title": "Fast and Memory-Efficient Video Diffusion Using Streamlined Inference"
+    },
+    {
+      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
+    },
+    {
+      "title": "Temporal Dynamic Quantization for Diffusion Models"
+    },
+    {
+      "title": "Diffusion Probabilistic Model Made Slim"
+    },
+    {
+      "title": "Structural Pruning for Diffusion Models"
+    },
+    {
+      "title": "Plug-and-Play Diffusion Distillation"
+    },
+    {
+      "title": "SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds"
+    },
+    {
+      "title": "Temporal Dynamic Quantization for Diffusion Models"
+    },
+    {
+      "title": "On improved Conditioning Mechanisms and Pre-training Strategies for Diffusion Models"
+    },
+    {
+      "title": "Solving Linear Inverse Problems Provably via Posterior Sampling with Latent Diffusion Models"
+    },
+    {
+      "title": "Binary Latent Diffusion"
+    },
+    {
+      "title": "Efficient Video Diffusion Models via Content-Frame Motion-Latent Decomposition"
+    },
+    {
+      "title": "EfficientDM: Efficient Quantization-Aware Fine-Tuning of Low-Bit Diffusion Models"
+    },
+    {
+      "title": "Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models"
+    },
+    {
+      "title": "Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching"
+    },
+    {
+      "title": "Recurrent Memory Transformer"
+    },
+    {
+      "title": "Ambient Diffusion: Learning Clean Distributions from Corrupted Data"
+    },
+    {
+      "title": "Analyzing Diffusion as Serial Reproduction"
+    }
   ]
 }
