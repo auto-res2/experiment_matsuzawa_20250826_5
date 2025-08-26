@@ -1,1 +1,5 @@
-# Please list the required python packages.
+torch>=2.0
+torchvision
+matplotlib>=3.5
+seaborn
+pyyaml
