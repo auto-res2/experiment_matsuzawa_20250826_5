@@ -7,32 +7,24 @@ L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
-(./agents4science_2025.sty
-(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
-(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
@@ -46,6 +38,12 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
@@ -55,8 +53,32 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
 No file paper.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -123,10 +145,7 @@ No file paper.aux.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
@@ -135,547 +154,69 @@ No file paper.aux.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
 
 Package natbib Warning: Citation `chen-2024-simple' on page 1 undefined on inpu
-t line 31.
+t line 45.
 
 
 Package natbib Warning: Citation `ma-2023-deepcache' on page 1 undefined on inp
-ut line 31.
+ut line 45.
 
 
 Package natbib Warning: Citation `li-2023-faster' on page 1 undefined on input 
-line 31.
+line 45.
 
 
 Package natbib Warning: Citation `ma-2024-learning' on page 1 undefined on inpu
-t line 31.
+t line 45.
 
 
 Package natbib Warning: Citation `ye-2024-training' on page 1 undefined on inpu
-t line 31.
+t line 45.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}]
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 
 Package natbib Warning: Citation `lin-2023-hyperbolic' on page 2 undefined on i
-nput line 38.
+nput line 52.
 
-! Undefined control sequence.
-l.39 ...try-plus-uncertainty score \(\kappa_{\text
-                                                  {seg}}\) and learns thresh...
 
-! Undefined control sequence.
-l.39 ...}}\) and learns thresholds \(\{\tau_{\text
-                                                  {easy}},\tau_{\text{hard}}...
-
-! Undefined control sequence.
-l.39 ...esholds \(\{\tau_{\text{easy}},\tau_{\text
-                                                  {hard}},K_{\text{skip}},K_...
-
-! Undefined control sequence.
-l.39 ..._{\text{easy}},\tau_{\text{hard}},K_{\text
-                                                  {skip}},K_{\max}\}\) via a...
-
-
-Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
-on input line 49.
-
-
-Package natbib Warning: Citation `xu-2023-semi' on page 2 undefined on input li
-ne 49.
-
-
-Package natbib Warning: Citation `ma-2023-deepcache' on page 2 undefined on inp
-ut line 49.
-
-
-Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
-t line 49.
-
-
-Package natbib Warning: Citation `li-2023-faster' on page 2 undefined on input 
-line 49.
-
-
-Package natbib Warning: Citation `ye-2024-training' on page 2 undefined on inpu
-t line 49.
-
-
-Package natbib Warning: Citation `chen-2024-simple' on page 2 undefined on inpu
-t line 52.
-
-
-Package natbib Warning: Citation `qiang-2023-coarse' on page 2 undefined on inp
-ut line 52.
-
-
-Package natbib Warning: Citation `chen-2023-hierarchical' on page 2 undefined o
-n input line 52.
-
-
-Package natbib Warning: Citation `lin-2023-hyperbolic' on page 2 undefined on i
-nput line 55.
-
-
-Package natbib Warning: Citation `ross-2021-benchmarks' on page 2 undefined on 
-input line 55.
-
-
-Package natbib Warning: Citation `liu-2023-oms' on page 2 undefined on input li
-ne 58.
-
-
-Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
-t line 58.
-
-
-Package natbib Warning: Citation `huang-2024-reverse' on page 2 undefined on in
-put line 58.
-
-
-Package natbib Warning: Citation `bai-2024-faster' on page 2 undefined on input
- line 58.
-
-[2]
-! Undefined control sequence.
-l.69 ...x,\mathbf y)=\frac{1}{\kappa}\operatorname
-                                                  {acosh}\Bigl(1+\frac{2\lVe...
-
-! Undefined control sequence.
-<argument> 2\lVert 
-                   \mathbf x-\mathbf y\rVert ^{2}
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> 2\lVert \mathbf x-\mathbf y\rVert 
-                                             ^{2}
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> (1-\lVert 
-                     \mathbf x\rVert ^{2})(1-\lVert \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> (1-\lVert \mathbf x\rVert 
-                                     ^{2})(1-\lVert \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> ...Vert \mathbf x\rVert ^{2})(1-\lVert 
-                                                  \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> ...Vert ^{2})(1-\lVert \mathbf y\rVert 
-                                                  ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-
-Package natbib Warning: Citation `lin-2023-hyperbolic' on page 3 undefined on i
-nput line 71.
-
-! Undefined control sequence.
-l.76  \kappa_{\text
-                   {seg}}=\lVert\Delta^{3}\mathbf x\rVert_{2}+\lambda\,\sigm...
-
-! Undefined control sequence.
-l.76  \kappa_{\text{seg}}=\lVert
-                                \Delta^{3}\mathbf x\rVert_{2}+\lambda\,\sigm...
-
-! Undefined control sequence.
-l.76 ...text{seg}}=\lVert\Delta^{3}\mathbf x\rVert
-                                                  _{2}+\lambda\,\sigma^{2}(g),
-
-Package natbib Warning: Citation `ma-2023-deepcache' on page 3 undefined on inp
-ut line 81.
-
-! Undefined control sequence.
-l.90 ...e-layer Riemannian MLP (\(\approx10\,\text
-                                                  {k}\) parameters) projects...
-
-! Undefined control sequence.
-l.91 ...SE(3)-equivariant head (\(\approx20\,\text
-                                                  {k}\) parameters) maps lat...
-
-! Undefined control sequence.
-l.98 ...nline difficulty}: compute \(\kappa_{\text
-                                                  {seg}}\) for every segment...
-
-! Undefined control sequence.
-l.99 ...}: with learned thresholds \(\{\tau_{\text
-                                                  {easy}},\tau_{\text{hard}}...
-
-! Undefined control sequence.
-l.99 ...esholds \(\{\tau_{\text{easy}},\tau_{\text
-                                                  {hard}},K_{\text{skip}},K_...
-
-! Undefined control sequence.
-l.99 ..._{\text{easy}},\tau_{\text{hard}},K_{\text
-                                                  {skip}},K_{\max}\}\):
-! Undefined control sequence.
-l.101       \item \(\kappa_{\text
-                                 {seg}}<\tau_{\text{easy}}\): perform two fr...
-
-! Undefined control sequence.
-l.101 ...  \item \(\kappa_{\text{seg}}<\tau_{\text
-                                                  {easy}}\): perform two fre...
-
-! Undefined control sequence.
-l.101 ...euse cached U-Net features for \(K_{\text
-                                                  {skip}}\) steps (DeepCache...
-
-[3]
-! Undefined control sequence.
-l.102       \item \(\kappa_{\text
-                                 {seg}}>\tau_{\text{hard}}\): allocate up to...
-
-! Undefined control sequence.
-l.102 ...  \item \(\kappa_{\text{seg}}>\tau_{\text
-                                                  {hard}}\): allocate up to ...
-
-! Undefined control sequence.
-l.105 ...}: a single-layer GRU (\(\approx20\,\text
-                                                  {k}\) parameters) observes...
-
-! Undefined control sequence.
-l.105 ...}\) parameters) observes \((\kappa_{\text
-                                                  {seg}},\text{timestep})\) ...
-
-! Undefined control sequence.
-l.105 ...rs) observes \((\kappa_{\text{seg}},\text
-                                                  {timestep})\) on stored ro...
-
-! Undefined control sequence.
-l.106 ...istance smaller than \(\varepsilon_{\text
-                                                  {hyp}}\) are merged, short...
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 \begin{algorithm}
-                       [H]
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114   \caption
-                {Segment-level planning with HADuS++}
-
-! LaTeX Error: Environment algorithmic undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115   \begin{algorithmic}
-                           [1]
-! Undefined control sequence.
-l.116     \State
-                 \textbf{input}: initial state \(\mathbf x_0\), goal sequenc...
-
-! Undefined control sequence.
-l.117     \For
-              {segment $i=1$ to $M$}
-! Undefined control sequence.
-l.118       \State
-                   $\mathbf z_i \leftarrow \varphi(g_i)$ \Comment{encode sub...
-
-! Undefined control sequence.
-l.118 ...hbf z_i \leftarrow \varphi(g_i)$ \Comment
-                                                  {encode sub-goal}
-! Undefined control sequence.
-l.119       \If
-               {$d_{\mathbb H}(\mathbf z_{i-1},\mathbf z_i)<\varepsilon_{\te...
-
-! Undefined control sequence.
-l.119 ...f z_{i-1},\mathbf z_i)<\varepsilon_{\text
-                                                  {hyp}}$}
-! Undefined control sequence.
-l.120         \State
-                     \textbf{continue} \Comment{merge with previous segment}
-! Undefined control sequence.
-l.120         \State \textbf{continue} \Comment
-                                               {merge with previous segment}
-! Undefined control sequence.
-l.121       \EndIf
-                  
-! Undefined control sequence.
-l.122       \State
-                   $\kappa_{\text{seg}} \leftarrow \lVert\Delta^{3}\mathbf x...
-
-! Undefined control sequence.
-l.122       \State $\kappa_{\text
-                                 {seg}} \leftarrow \lVert\Delta^{3}\mathbf x...
-
-! Undefined control sequence.
-l.122 ...te $\kappa_{\text{seg}} \leftarrow \lVert
-                                                  \Delta^{3}\mathbf x\rVert_...
-
-! Undefined control sequence.
-l.122 ...leftarrow \lVert\Delta^{3}\mathbf x\rVert
-                                                  _2 + \lambda\,\sigma^{2}(g...
-
-! Undefined control sequence.
-l.123       \State
-                   $(n_{\text{fresh}},n_{\text{reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123       \State $(n_{\text
-                             {fresh}},n_{\text{reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123       \State $(n_{\text{fresh}},n_{\text
-                                              {reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123 ...resh}},n_{\text{reuse}}) \leftarrow \text
-                                                  {ADS}(\kappa_{\text{seg}})$
-! Undefined control sequence.
-l.123 ...se}}) \leftarrow \text{ADS}(\kappa_{\text
-                                                  {seg}})$
-! Undefined control sequence.
-l.124       \For
-                {$j=1$ to $n_{\text{fresh}}$}
-! Undefined control sequence.
-l.124       \For{$j=1$ to $n_{\text
-                                   {fresh}}$}
-! Undefined control sequence.
-l.125         \State
-                     $\mathbf z \leftarrow \text{U\_Net}(\mathbf z)$
-! Undefined control sequence.
-l.125         \State $\mathbf z \leftarrow \text
-                                                {U\_Net}(\mathbf z)$
-! Undefined control sequence.
-l.126         \If
-                 {ConsistencyHead($\mathbf z$)=\textbf{fail}}
-! Undefined control sequence.
-l.127           \State
-                       \textbf{break and replan}
-! Undefined control sequence.
-l.128         \EndIf
-                    
-! Undefined control sequence.
-l.129       \EndFor
-                   
-! Undefined control sequence.
-l.130       \State
-                   \text{reuse cached features for } $n_{\text{reuse}}$ steps
-! Undefined control sequence.
-l.130       \State \text
-                        {reuse cached features for } $n_{\text{reuse}}$ steps
-! Undefined control sequence.
-l.130 ...ext{reuse cached features for } $n_{\text
-                                                  {reuse}}$ steps
-! Undefined control sequence.
-l.131       \State
-                   $\hat g_i \leftarrow \psi(\mathbf z)$ \Comment{decode to ...
-
-! Undefined control sequence.
-l.131 ... g_i \leftarrow \psi(\mathbf z)$ \Comment
-                                                  {decode to SE(3)}
-! Undefined control sequence.
-l.132     \EndFor
-                 
-! Undefined control sequence.
-l.133     \State
-                 \textbf{return} executed action sequence
-
-! LaTeX Error: \begin{document} ended by \end{algorithmic}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134   \end{algorithmic}
-                         
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 \end{algorithm}
-                     
-
-Package natbib Warning: Citation `zhou-2023-fast' on page 4 undefined on input 
-line 138.
-
-
-Package natbib Warning: Citation `huang-2024-reverse' on page 4 undefined on in
-put line 138.
-
-
-! LaTeX Error: Unicode character ^^A (U+0001)
+! LaTeX Error: Unicode character ^^H (U+0008)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ... 3-D Maze built in \texttt{dm^^A3control}
-                                                  .
-[4]
-
-Package natbib Warning: Citation `ma-2023-deepcache' on page 5 undefined on inp
-ut line 172.
+l.70 ...x,\mathbf y)=\frac{1}{\kappa}\,\acosh\!^^H
+                                                  iggl(1+\frac{2\lVert\mathb...
 
 
-Package natbib Warning: Citation `ye-2024-training' on page 5 undefined on inpu
-t line 172.
-
-! Undefined control sequence.
-l.178 ... CUDA traces; logs record \(\kappa_{\text
-                                                  {seg}}\), denoising steps,...
-
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.189   \includegraphics
-                        [width=0.7\linewidth]{ images/wall_clock.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.189   \includegraphics[width=0.7\linewidth]
-                                             { images/wall_clock.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.189   \includegraphics[width=0.7\linewidth]
-                                             { images/wall_clock.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.189 ...aphics[width=0.7\linewidth]{ images/wall_
-                                                  clock.pdf }
-! Extra }, or forgotten $.
-l.189 ...h=0.7\linewidth]{ images/wall_clock.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.190 ...{End-to-end wall-clock across algorithms}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.191 \end{figure}
-                  
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.198   \includegraphics
-                        [width=0.7\linewidth]{ images/latent_distortion.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.198   \includegraphics[width=0.7\linewidth]
-                                             { images/latent_distortion.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.198   \includegraphics[width=0.7\linewidth]
-                                             { images/latent_distortion.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.198 ...hics[width=0.7\linewidth]{ images/latent_
-                                                  distortion.pdf }
-! Extra }, or forgotten $.
-l.198 ...inewidth]{ images/latent_distortion.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.199 ...atent-space distortion (lower is better)}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.200 \end{figure}
-                  
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.207   \includegraphics
-                        [width=0.7\linewidth]{ images/allocated_steps.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.207   \includegraphics[width=0.7\linewidth]
-                                             { images/allocated_steps.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.207   \includegraphics[width=0.7\linewidth]
-                                             { images/allocated_steps.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.207 ...s[width=0.7\linewidth]{ images/allocated_
-                                                  steps.pdf }
-! Extra }, or forgotten $.
-l.207 ...\linewidth]{ images/allocated_steps.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Undefined control sequence.
-<argument> ...segment difficulty \(\kappa _{\text 
-                                                  {seg}}\)}}{\thepage }{\@cu...
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Undefined control sequence.
-<argument> ...segment difficulty \(\kappa _{\text 
-                                                  {seg}}\)\fi 
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.209 \end{figure}
-                  
-[5]
-
-Package natbib Warning: Citation `liu-2023-oms' on page 6 undefined on input li
-ne 222.
-
+Underfull \vbox (badness 10000) has occurred while \output is active [2]
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.138 
+       <./images/wall_clock.pdf>]
 No file paper.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[6] [7] (./paper.aux)
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.153 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.153 \end{document}
+                     <./images/latent_distortion.pdf> <./images/allocated_steps
+.pdf>] (./paper.aux)
 kpathsea: Running mktexpk --mfmode / --bdpi 600 --mag 1+0/600 --dpi 600 ectt1000
 mktexpk: Running mf-nowin -progname=mf \mode:=ljfour; mag:=1+0/600; nonstopmode; input ectt1000
 This is METAFONT, Version 2.71828182 (TeX Live 2023/Debian) (preloaded base=mf)
@@ -753,29 +294,19 @@ usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on paper.pdf (7 pages, 175471 bytes).
+Output written on paper.pdf (4 pages, 178692 bytes).
 Transcript written on paper.log.
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 The top-level auxiliary file: paper.aux
 The style file: plainnat.bst
 Database file #1: references.bib
-Warning--empty journal in bai-2024-faster
 Warning--empty journal in chen-2024-simple
-Warning--empty journal in chen-2023-hierarchical
-Warning--empty journal in huang-2024-reverse
 Warning--empty journal in li-2023-faster
 Warning--empty journal in lin-2023-hyperbolic
-Warning--empty journal in liu-2023-oms
 Warning--empty journal in ma-2023-deepcache
 Warning--empty journal in ma-2024-learning
-Warning--empty journal in moon-2024-simple
-Warning--empty journal in qiang-2023-coarse
-Warning--empty journal in ross-2021-benchmarks
-Warning--empty journal in salimans-2024-multistep
-Warning--empty journal in xu-2023-semi
 Warning--empty journal in ye-2024-training
-Warning--empty journal in zhou-2023-fast
-(There were 16 warnings)
+(There were 6 warnings)
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
@@ -785,32 +316,24 @@ L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
-(./agents4science_2025.sty
-(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
-(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
@@ -824,6 +347,12 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
@@ -833,8 +362,32 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(./paper.aux)
+(./paper.aux) (./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -901,11 +454,7 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./paper.out) (./paper.out)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
@@ -914,547 +463,67 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
 
 Package natbib Warning: Citation `chen-2024-simple' on page 1 undefined on inpu
-t line 31.
+t line 45.
 
 
 Package natbib Warning: Citation `ma-2023-deepcache' on page 1 undefined on inp
-ut line 31.
+ut line 45.
 
 
 Package natbib Warning: Citation `li-2023-faster' on page 1 undefined on input 
-line 31.
+line 45.
 
 
 Package natbib Warning: Citation `ma-2024-learning' on page 1 undefined on inpu
-t line 31.
+t line 45.
 
 
 Package natbib Warning: Citation `ye-2024-training' on page 1 undefined on inpu
-t line 31.
+t line 45.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}]
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 
 Package natbib Warning: Citation `lin-2023-hyperbolic' on page 2 undefined on i
-nput line 38.
+nput line 52.
 
-! Undefined control sequence.
-l.39 ...try-plus-uncertainty score \(\kappa_{\text
-                                                  {seg}}\) and learns thresh...
 
-! Undefined control sequence.
-l.39 ...}}\) and learns thresholds \(\{\tau_{\text
-                                                  {easy}},\tau_{\text{hard}}...
-
-! Undefined control sequence.
-l.39 ...esholds \(\{\tau_{\text{easy}},\tau_{\text
-                                                  {hard}},K_{\text{skip}},K_...
-
-! Undefined control sequence.
-l.39 ..._{\text{easy}},\tau_{\text{hard}},K_{\text
-                                                  {skip}},K_{\max}\}\) via a...
-
-
-Package natbib Warning: Citation `salimans-2024-multistep' on page 2 undefined 
-on input line 49.
-
-
-Package natbib Warning: Citation `xu-2023-semi' on page 2 undefined on input li
-ne 49.
-
-
-Package natbib Warning: Citation `ma-2023-deepcache' on page 2 undefined on inp
-ut line 49.
-
-
-Package natbib Warning: Citation `ma-2024-learning' on page 2 undefined on inpu
-t line 49.
-
-
-Package natbib Warning: Citation `li-2023-faster' on page 2 undefined on input 
-line 49.
-
-
-Package natbib Warning: Citation `ye-2024-training' on page 2 undefined on inpu
-t line 49.
-
-
-Package natbib Warning: Citation `chen-2024-simple' on page 2 undefined on inpu
-t line 52.
-
-
-Package natbib Warning: Citation `qiang-2023-coarse' on page 2 undefined on inp
-ut line 52.
-
-
-Package natbib Warning: Citation `chen-2023-hierarchical' on page 2 undefined o
-n input line 52.
-
-
-Package natbib Warning: Citation `lin-2023-hyperbolic' on page 2 undefined on i
-nput line 55.
-
-
-Package natbib Warning: Citation `ross-2021-benchmarks' on page 2 undefined on 
-input line 55.
-
-
-Package natbib Warning: Citation `liu-2023-oms' on page 2 undefined on input li
-ne 58.
-
-
-Package natbib Warning: Citation `moon-2024-simple' on page 2 undefined on inpu
-t line 58.
-
-
-Package natbib Warning: Citation `huang-2024-reverse' on page 2 undefined on in
-put line 58.
-
-
-Package natbib Warning: Citation `bai-2024-faster' on page 2 undefined on input
- line 58.
-
-[2]
-! Undefined control sequence.
-l.69 ...x,\mathbf y)=\frac{1}{\kappa}\operatorname
-                                                  {acosh}\Bigl(1+\frac{2\lVe...
-
-! Undefined control sequence.
-<argument> 2\lVert 
-                   \mathbf x-\mathbf y\rVert ^{2}
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> 2\lVert \mathbf x-\mathbf y\rVert 
-                                             ^{2}
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> (1-\lVert 
-                     \mathbf x\rVert ^{2})(1-\lVert \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> (1-\lVert \mathbf x\rVert 
-                                     ^{2})(1-\lVert \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> ...Vert \mathbf x\rVert ^{2})(1-\lVert 
-                                                  \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> ...Vert ^{2})(1-\lVert \mathbf y\rVert 
-                                                  ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-
-Package natbib Warning: Citation `lin-2023-hyperbolic' on page 3 undefined on i
-nput line 71.
-
-! Undefined control sequence.
-l.76  \kappa_{\text
-                   {seg}}=\lVert\Delta^{3}\mathbf x\rVert_{2}+\lambda\,\sigm...
-
-! Undefined control sequence.
-l.76  \kappa_{\text{seg}}=\lVert
-                                \Delta^{3}\mathbf x\rVert_{2}+\lambda\,\sigm...
-
-! Undefined control sequence.
-l.76 ...text{seg}}=\lVert\Delta^{3}\mathbf x\rVert
-                                                  _{2}+\lambda\,\sigma^{2}(g),
-
-Package natbib Warning: Citation `ma-2023-deepcache' on page 3 undefined on inp
-ut line 81.
-
-! Undefined control sequence.
-l.90 ...e-layer Riemannian MLP (\(\approx10\,\text
-                                                  {k}\) parameters) projects...
-
-! Undefined control sequence.
-l.91 ...SE(3)-equivariant head (\(\approx20\,\text
-                                                  {k}\) parameters) maps lat...
-
-! Undefined control sequence.
-l.98 ...nline difficulty}: compute \(\kappa_{\text
-                                                  {seg}}\) for every segment...
-
-! Undefined control sequence.
-l.99 ...}: with learned thresholds \(\{\tau_{\text
-                                                  {easy}},\tau_{\text{hard}}...
-
-! Undefined control sequence.
-l.99 ...esholds \(\{\tau_{\text{easy}},\tau_{\text
-                                                  {hard}},K_{\text{skip}},K_...
-
-! Undefined control sequence.
-l.99 ..._{\text{easy}},\tau_{\text{hard}},K_{\text
-                                                  {skip}},K_{\max}\}\):
-! Undefined control sequence.
-l.101       \item \(\kappa_{\text
-                                 {seg}}<\tau_{\text{easy}}\): perform two fr...
-
-! Undefined control sequence.
-l.101 ...  \item \(\kappa_{\text{seg}}<\tau_{\text
-                                                  {easy}}\): perform two fre...
-
-! Undefined control sequence.
-l.101 ...euse cached U-Net features for \(K_{\text
-                                                  {skip}}\) steps (DeepCache...
-
-[3]
-! Undefined control sequence.
-l.102       \item \(\kappa_{\text
-                                 {seg}}>\tau_{\text{hard}}\): allocate up to...
-
-! Undefined control sequence.
-l.102 ...  \item \(\kappa_{\text{seg}}>\tau_{\text
-                                                  {hard}}\): allocate up to ...
-
-! Undefined control sequence.
-l.105 ...}: a single-layer GRU (\(\approx20\,\text
-                                                  {k}\) parameters) observes...
-
-! Undefined control sequence.
-l.105 ...}\) parameters) observes \((\kappa_{\text
-                                                  {seg}},\text{timestep})\) ...
-
-! Undefined control sequence.
-l.105 ...rs) observes \((\kappa_{\text{seg}},\text
-                                                  {timestep})\) on stored ro...
-
-! Undefined control sequence.
-l.106 ...istance smaller than \(\varepsilon_{\text
-                                                  {hyp}}\) are merged, short...
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 \begin{algorithm}
-                       [H]
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114   \caption
-                {Segment-level planning with HADuS++}
-
-! LaTeX Error: Environment algorithmic undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115   \begin{algorithmic}
-                           [1]
-! Undefined control sequence.
-l.116     \State
-                 \textbf{input}: initial state \(\mathbf x_0\), goal sequenc...
-
-! Undefined control sequence.
-l.117     \For
-              {segment $i=1$ to $M$}
-! Undefined control sequence.
-l.118       \State
-                   $\mathbf z_i \leftarrow \varphi(g_i)$ \Comment{encode sub...
-
-! Undefined control sequence.
-l.118 ...hbf z_i \leftarrow \varphi(g_i)$ \Comment
-                                                  {encode sub-goal}
-! Undefined control sequence.
-l.119       \If
-               {$d_{\mathbb H}(\mathbf z_{i-1},\mathbf z_i)<\varepsilon_{\te...
-
-! Undefined control sequence.
-l.119 ...f z_{i-1},\mathbf z_i)<\varepsilon_{\text
-                                                  {hyp}}$}
-! Undefined control sequence.
-l.120         \State
-                     \textbf{continue} \Comment{merge with previous segment}
-! Undefined control sequence.
-l.120         \State \textbf{continue} \Comment
-                                               {merge with previous segment}
-! Undefined control sequence.
-l.121       \EndIf
-                  
-! Undefined control sequence.
-l.122       \State
-                   $\kappa_{\text{seg}} \leftarrow \lVert\Delta^{3}\mathbf x...
-
-! Undefined control sequence.
-l.122       \State $\kappa_{\text
-                                 {seg}} \leftarrow \lVert\Delta^{3}\mathbf x...
-
-! Undefined control sequence.
-l.122 ...te $\kappa_{\text{seg}} \leftarrow \lVert
-                                                  \Delta^{3}\mathbf x\rVert_...
-
-! Undefined control sequence.
-l.122 ...leftarrow \lVert\Delta^{3}\mathbf x\rVert
-                                                  _2 + \lambda\,\sigma^{2}(g...
-
-! Undefined control sequence.
-l.123       \State
-                   $(n_{\text{fresh}},n_{\text{reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123       \State $(n_{\text
-                             {fresh}},n_{\text{reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123       \State $(n_{\text{fresh}},n_{\text
-                                              {reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123 ...resh}},n_{\text{reuse}}) \leftarrow \text
-                                                  {ADS}(\kappa_{\text{seg}})$
-! Undefined control sequence.
-l.123 ...se}}) \leftarrow \text{ADS}(\kappa_{\text
-                                                  {seg}})$
-! Undefined control sequence.
-l.124       \For
-                {$j=1$ to $n_{\text{fresh}}$}
-! Undefined control sequence.
-l.124       \For{$j=1$ to $n_{\text
-                                   {fresh}}$}
-! Undefined control sequence.
-l.125         \State
-                     $\mathbf z \leftarrow \text{U\_Net}(\mathbf z)$
-! Undefined control sequence.
-l.125         \State $\mathbf z \leftarrow \text
-                                                {U\_Net}(\mathbf z)$
-! Undefined control sequence.
-l.126         \If
-                 {ConsistencyHead($\mathbf z$)=\textbf{fail}}
-! Undefined control sequence.
-l.127           \State
-                       \textbf{break and replan}
-! Undefined control sequence.
-l.128         \EndIf
-                    
-! Undefined control sequence.
-l.129       \EndFor
-                   
-! Undefined control sequence.
-l.130       \State
-                   \text{reuse cached features for } $n_{\text{reuse}}$ steps
-! Undefined control sequence.
-l.130       \State \text
-                        {reuse cached features for } $n_{\text{reuse}}$ steps
-! Undefined control sequence.
-l.130 ...ext{reuse cached features for } $n_{\text
-                                                  {reuse}}$ steps
-! Undefined control sequence.
-l.131       \State
-                   $\hat g_i \leftarrow \psi(\mathbf z)$ \Comment{decode to ...
-
-! Undefined control sequence.
-l.131 ... g_i \leftarrow \psi(\mathbf z)$ \Comment
-                                                  {decode to SE(3)}
-! Undefined control sequence.
-l.132     \EndFor
-                 
-! Undefined control sequence.
-l.133     \State
-                 \textbf{return} executed action sequence
-
-! LaTeX Error: \begin{document} ended by \end{algorithmic}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134   \end{algorithmic}
-                         
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 \end{algorithm}
-                     
-
-Package natbib Warning: Citation `zhou-2023-fast' on page 4 undefined on input 
-line 138.
-
-
-Package natbib Warning: Citation `huang-2024-reverse' on page 4 undefined on in
-put line 138.
-
-
-! LaTeX Error: Unicode character ^^A (U+0001)
+! LaTeX Error: Unicode character ^^H (U+0008)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ... 3-D Maze built in \texttt{dm^^A3control}
-                                                  .
-[4]
-
-Package natbib Warning: Citation `ma-2023-deepcache' on page 5 undefined on inp
-ut line 172.
+l.70 ...x,\mathbf y)=\frac{1}{\kappa}\,\acosh\!^^H
+                                                  iggl(1+\frac{2\lVert\mathb...
 
 
-Package natbib Warning: Citation `ye-2024-training' on page 5 undefined on inpu
-t line 172.
-
-! Undefined control sequence.
-l.178 ... CUDA traces; logs record \(\kappa_{\text
-                                                  {seg}}\), denoising steps,...
-
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.189   \includegraphics
-                        [width=0.7\linewidth]{ images/wall_clock.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.189   \includegraphics[width=0.7\linewidth]
-                                             { images/wall_clock.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.189   \includegraphics[width=0.7\linewidth]
-                                             { images/wall_clock.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.189 ...aphics[width=0.7\linewidth]{ images/wall_
-                                                  clock.pdf }
-! Extra }, or forgotten $.
-l.189 ...h=0.7\linewidth]{ images/wall_clock.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.190 ...{End-to-end wall-clock across algorithms}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.191 \end{figure}
-                  
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.198   \includegraphics
-                        [width=0.7\linewidth]{ images/latent_distortion.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.198   \includegraphics[width=0.7\linewidth]
-                                             { images/latent_distortion.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.198   \includegraphics[width=0.7\linewidth]
-                                             { images/latent_distortion.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.198 ...hics[width=0.7\linewidth]{ images/latent_
-                                                  distortion.pdf }
-! Extra }, or forgotten $.
-l.198 ...inewidth]{ images/latent_distortion.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.199 ...atent-space distortion (lower is better)}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.200 \end{figure}
-                  
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.207   \includegraphics
-                        [width=0.7\linewidth]{ images/allocated_steps.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.207   \includegraphics[width=0.7\linewidth]
-                                             { images/allocated_steps.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.207   \includegraphics[width=0.7\linewidth]
-                                             { images/allocated_steps.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.207 ...s[width=0.7\linewidth]{ images/allocated_
-                                                  steps.pdf }
-! Extra }, or forgotten $.
-l.207 ...\linewidth]{ images/allocated_steps.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Undefined control sequence.
-<argument> ...segment difficulty \(\kappa _{\text 
-                                                  {seg}}\)}}{\thepage }{\@cu...
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Undefined control sequence.
-<argument> ...segment difficulty \(\kappa _{\text 
-                                                  {seg}}\)\fi 
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.209 \end{figure}
-                  
-[5]
-
-Package natbib Warning: Citation `liu-2023-oms' on page 6 undefined on input li
-ne 222.
-
-(./paper.bbl [6])
+Underfull \vbox (badness 10000) has occurred while \output is active [2]
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.138 
+       <./images/wall_clock.pdf>] (./paper.bbl [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 
+      <./images/latent_distortion.pdf> <./images/allocated_steps.pdf>])
 
 Package natbib Warning: There were undefined citations.
 
-[7] [8] (./paper.aux
+[5] (./paper.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
@@ -1475,7 +544,7 @@ usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 181368 bytes).
+Output written on paper.pdf (5 pages, 181681 bytes).
 Transcript written on paper.log.
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -1486,32 +555,24 @@ L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
-(./agents4science_2025.sty
-(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
-(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
 (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
@@ -1525,6 +586,12 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
@@ -1534,8 +601,32 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(./paper.aux)
+(./paper.aux) (./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1602,11 +693,7 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./paper.out) (./paper.out)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
@@ -1615,429 +702,39 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd) [1{/var/lib/texmf/fon
 ts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
 base/8r.enc}] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
-! Undefined control sequence.
-l.39 ...try-plus-uncertainty score \(\kappa_{\text
-                                                  {seg}}\) and learns thresh...
 
-! Undefined control sequence.
-l.39 ...}}\) and learns thresholds \(\{\tau_{\text
-                                                  {easy}},\tau_{\text{hard}}...
-
-! Undefined control sequence.
-l.39 ...esholds \(\{\tau_{\text{easy}},\tau_{\text
-                                                  {hard}},K_{\text{skip}},K_...
-
-! Undefined control sequence.
-l.39 ..._{\text{easy}},\tau_{\text{hard}},K_{\text
-                                                  {skip}},K_{\max}\}\) via a...
-
-[2]
-! Undefined control sequence.
-l.69 ...x,\mathbf y)=\frac{1}{\kappa}\operatorname
-                                                  {acosh}\Bigl(1+\frac{2\lVe...
-
-! Undefined control sequence.
-<argument> 2\lVert 
-                   \mathbf x-\mathbf y\rVert ^{2}
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> 2\lVert \mathbf x-\mathbf y\rVert 
-                                             ^{2}
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> (1-\lVert 
-                     \mathbf x\rVert ^{2})(1-\lVert \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> (1-\lVert \mathbf x\rVert 
-                                     ^{2})(1-\lVert \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> ...Vert \mathbf x\rVert ^{2})(1-\lVert 
-                                                  \mathbf y\rVert ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-<argument> ...Vert ^{2})(1-\lVert \mathbf y\rVert 
-                                                  ^{2})
-l.69 ...x\rVert^{2})(1-\lVert\mathbf y\rVert^{2})}
-                                                  \Bigr).
-! Undefined control sequence.
-l.76  \kappa_{\text
-                   {seg}}=\lVert\Delta^{3}\mathbf x\rVert_{2}+\lambda\,\sigm...
-
-! Undefined control sequence.
-l.76  \kappa_{\text{seg}}=\lVert
-                                \Delta^{3}\mathbf x\rVert_{2}+\lambda\,\sigm...
-
-! Undefined control sequence.
-l.76 ...text{seg}}=\lVert\Delta^{3}\mathbf x\rVert
-                                                  _{2}+\lambda\,\sigma^{2}(g),
-! Undefined control sequence.
-l.90 ...e-layer Riemannian MLP (\(\approx10\,\text
-                                                  {k}\) parameters) projects...
-
-! Undefined control sequence.
-l.91 ...SE(3)-equivariant head (\(\approx20\,\text
-                                                  {k}\) parameters) maps lat...
-
-[3]
-! Undefined control sequence.
-l.98 ...nline difficulty}: compute \(\kappa_{\text
-                                                  {seg}}\) for every segment...
-
-! Undefined control sequence.
-l.99 ...}: with learned thresholds \(\{\tau_{\text
-                                                  {easy}},\tau_{\text{hard}}...
-
-! Undefined control sequence.
-l.99 ...esholds \(\{\tau_{\text{easy}},\tau_{\text
-                                                  {hard}},K_{\text{skip}},K_...
-
-! Undefined control sequence.
-l.99 ..._{\text{easy}},\tau_{\text{hard}},K_{\text
-                                                  {skip}},K_{\max}\}\):
-! Undefined control sequence.
-l.101       \item \(\kappa_{\text
-                                 {seg}}<\tau_{\text{easy}}\): perform two fr...
-
-! Undefined control sequence.
-l.101 ...  \item \(\kappa_{\text{seg}}<\tau_{\text
-                                                  {easy}}\): perform two fre...
-
-! Undefined control sequence.
-l.101 ...euse cached U-Net features for \(K_{\text
-                                                  {skip}}\) steps (DeepCache...
-
-! Undefined control sequence.
-l.102       \item \(\kappa_{\text
-                                 {seg}}>\tau_{\text{hard}}\): allocate up to...
-
-! Undefined control sequence.
-l.102 ...  \item \(\kappa_{\text{seg}}>\tau_{\text
-                                                  {hard}}\): allocate up to ...
-
-! Undefined control sequence.
-l.105 ...}: a single-layer GRU (\(\approx20\,\text
-                                                  {k}\) parameters) observes...
-
-! Undefined control sequence.
-l.105 ...}\) parameters) observes \((\kappa_{\text
-                                                  {seg}},\text{timestep})\) ...
-
-! Undefined control sequence.
-l.105 ...rs) observes \((\kappa_{\text{seg}},\text
-                                                  {timestep})\) on stored ro...
-
-! Undefined control sequence.
-l.106 ...istance smaller than \(\varepsilon_{\text
-                                                  {hyp}}\) are merged, short...
-
-
-! LaTeX Error: Environment algorithm undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 \begin{algorithm}
-                       [H]
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114   \caption
-                {Segment-level planning with HADuS++}
-
-! LaTeX Error: Environment algorithmic undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115   \begin{algorithmic}
-                           [1]
-! Undefined control sequence.
-l.116     \State
-                 \textbf{input}: initial state \(\mathbf x_0\), goal sequenc...
-
-! Undefined control sequence.
-l.117     \For
-              {segment $i=1$ to $M$}
-! Undefined control sequence.
-l.118       \State
-                   $\mathbf z_i \leftarrow \varphi(g_i)$ \Comment{encode sub...
-
-! Undefined control sequence.
-l.118 ...hbf z_i \leftarrow \varphi(g_i)$ \Comment
-                                                  {encode sub-goal}
-! Undefined control sequence.
-l.119       \If
-               {$d_{\mathbb H}(\mathbf z_{i-1},\mathbf z_i)<\varepsilon_{\te...
-
-! Undefined control sequence.
-l.119 ...f z_{i-1},\mathbf z_i)<\varepsilon_{\text
-                                                  {hyp}}$}
-! Undefined control sequence.
-l.120         \State
-                     \textbf{continue} \Comment{merge with previous segment}
-! Undefined control sequence.
-l.120         \State \textbf{continue} \Comment
-                                               {merge with previous segment}
-! Undefined control sequence.
-l.121       \EndIf
-                  
-! Undefined control sequence.
-l.122       \State
-                   $\kappa_{\text{seg}} \leftarrow \lVert\Delta^{3}\mathbf x...
-
-! Undefined control sequence.
-l.122       \State $\kappa_{\text
-                                 {seg}} \leftarrow \lVert\Delta^{3}\mathbf x...
-
-! Undefined control sequence.
-l.122 ...te $\kappa_{\text{seg}} \leftarrow \lVert
-                                                  \Delta^{3}\mathbf x\rVert_...
-
-! Undefined control sequence.
-l.122 ...leftarrow \lVert\Delta^{3}\mathbf x\rVert
-                                                  _2 + \lambda\,\sigma^{2}(g...
-
-! Undefined control sequence.
-l.123       \State
-                   $(n_{\text{fresh}},n_{\text{reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123       \State $(n_{\text
-                             {fresh}},n_{\text{reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123       \State $(n_{\text{fresh}},n_{\text
-                                              {reuse}}) \leftarrow \text{ADS...
-
-! Undefined control sequence.
-l.123 ...resh}},n_{\text{reuse}}) \leftarrow \text
-                                                  {ADS}(\kappa_{\text{seg}})$
-! Undefined control sequence.
-l.123 ...se}}) \leftarrow \text{ADS}(\kappa_{\text
-                                                  {seg}})$
-! Undefined control sequence.
-l.124       \For
-                {$j=1$ to $n_{\text{fresh}}$}
-! Undefined control sequence.
-l.124       \For{$j=1$ to $n_{\text
-                                   {fresh}}$}
-! Undefined control sequence.
-l.125         \State
-                     $\mathbf z \leftarrow \text{U\_Net}(\mathbf z)$
-! Undefined control sequence.
-l.125         \State $\mathbf z \leftarrow \text
-                                                {U\_Net}(\mathbf z)$
-! Undefined control sequence.
-l.126         \If
-                 {ConsistencyHead($\mathbf z$)=\textbf{fail}}
-! Undefined control sequence.
-l.127           \State
-                       \textbf{break and replan}
-! Undefined control sequence.
-l.128         \EndIf
-                    
-! Undefined control sequence.
-l.129       \EndFor
-                   
-! Undefined control sequence.
-l.130       \State
-                   \text{reuse cached features for } $n_{\text{reuse}}$ steps
-! Undefined control sequence.
-l.130       \State \text
-                        {reuse cached features for } $n_{\text{reuse}}$ steps
-! Undefined control sequence.
-l.130 ...ext{reuse cached features for } $n_{\text
-                                                  {reuse}}$ steps
-! Undefined control sequence.
-l.131       \State
-                   $\hat g_i \leftarrow \psi(\mathbf z)$ \Comment{decode to ...
-
-! Undefined control sequence.
-l.131 ... g_i \leftarrow \psi(\mathbf z)$ \Comment
-                                                  {decode to SE(3)}
-! Undefined control sequence.
-l.132     \EndFor
-                 
-! Undefined control sequence.
-l.133     \State
-                 \textbf{return} executed action sequence
-
-! LaTeX Error: \begin{document} ended by \end{algorithmic}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134   \end{algorithmic}
-                         
-
-! LaTeX Error: \begin{document} ended by \end{algorithm}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 \end{algorithm}
-                     
-
-! LaTeX Error: Unicode character ^^A (U+0001)
+! LaTeX Error: Unicode character ^^H (U+0008)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 ... 3-D Maze built in \texttt{dm^^A3control}
-                                                  .
-[4]
-! Undefined control sequence.
-l.178 ... CUDA traces; logs record \(\kappa_{\text
-                                                  {seg}}\), denoising steps,...
+l.70 ...x,\mathbf y)=\frac{1}{\kappa}\,\acosh\!^^H
+                                                  iggl(1+\frac{2\lVert\mathb...
 
 
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.189   \includegraphics
-                        [width=0.7\linewidth]{ images/wall_clock.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.189   \includegraphics[width=0.7\linewidth]
-                                             { images/wall_clock.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.189   \includegraphics[width=0.7\linewidth]
-                                             { images/wall_clock.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.189 ...aphics[width=0.7\linewidth]{ images/wall_
-                                                  clock.pdf }
-! Extra }, or forgotten $.
-l.189 ...h=0.7\linewidth]{ images/wall_clock.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.190 ...{End-to-end wall-clock across algorithms}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.191 \end{figure}
-                  
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.198   \includegraphics
-                        [width=0.7\linewidth]{ images/latent_distortion.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.198   \includegraphics[width=0.7\linewidth]
-                                             { images/latent_distortion.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.198   \includegraphics[width=0.7\linewidth]
-                                             { images/latent_distortion.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.198 ...hics[width=0.7\linewidth]{ images/latent_
-                                                  distortion.pdf }
-! Extra }, or forgotten $.
-l.198 ...inewidth]{ images/latent_distortion.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.199 ...atent-space distortion (lower is better)}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.200 \end{figure}
-                  
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 \begin{figure}[H]
-                       
-! Undefined control sequence.
-l.207   \includegraphics
-                        [width=0.7\linewidth]{ images/allocated_steps.pdf }
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.207   \includegraphics[width=0.7\linewidth]
-                                             { images/allocated_steps.pdf }
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.207   \includegraphics[width=0.7\linewidth]
-                                             { images/allocated_steps.pdf }
-! Missing $ inserted.
-<inserted text> 
-                $
-l.207 ...s[width=0.7\linewidth]{ images/allocated_
-                                                  steps.pdf }
-! Extra }, or forgotten $.
-l.207 ...\linewidth]{ images/allocated_steps.pdf }
-                                                  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Undefined control sequence.
-<argument> ...segment difficulty \(\kappa _{\text 
-                                                  {seg}}\)}}{\thepage }{\@cu...
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Undefined control sequence.
-<argument> ...segment difficulty \(\kappa _{\text 
-                                                  {seg}}\)\fi 
-l.208 ...gment difficulty \(\kappa_{\text{seg}}\)}
-                                                  
-! Missing } inserted.
-<inserted text> 
-                }
-l.209 \end{figure}
-                  
-[5] (./paper.bbl [6]) [7] [8] (./paper.aux) )
+Underfull \vbox (badness 10000) has occurred while \output is active [2]
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.138 
+       <./images/wall_clock.pdf>] (./paper.bbl [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 
+      <./images/latent_distortion.pdf> <./images/allocated_steps.pdf>])
+[5] (./paper.aux) )
 (see the transcript file for additional information) </home/runner/.texlive2023
 /texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/
@@ -2053,5 +750,5 @@ usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 182989 bytes).
+Output written on paper.pdf (5 pages, 181721 bytes).
 Transcript written on paper.log.
