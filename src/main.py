@@ -6,7 +6,7 @@ src/main.py
 Project entry-point (`python -m src.main`).  It loads the
 YAML configuration, executes training, then the evaluation
 suite.  Results and plots are written to the directory
-.research/iteration6/images as required.
+.research/iteration7/images as required.
 """
 from __future__ import annotations
 import yaml, pathlib
