@@ -13,7 +13,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from .utils import SGHRBuffer, save_pdf, ensure_dir
+from .utils import SGHRBuffer, save_pdf, ensure_dir, IMG_DIR
 
 class SeedStabilityEval:
     """Checks that seeds stay stable over simulated updates."""
@@ -46,13 +46,13 @@ class SeedStabilityEval:
             print(f"[EVAL] round {r} – drift {drift:.6f} – hash-match {match*100:.1f}%")
 
         # plot
-        ensure_dir(".research/iteration1/images")
+        ensure_dir(IMG_DIR)
         import matplotlib.pyplot as plt, seaborn as sns
         sns.set_theme()
         fig, ax = plt.subplots(figsize=(6,4))
         sns.lineplot(x=list(range(n_rounds)), y=drift_vals, marker="o", ax=ax)
         ax.set_xlabel("Checkpoint"); ax.set_ylabel("MSE Drift (proxy)")
-        save_pdf(fig, ".research/iteration1/images/seed_drift.pdf"); plt.close(fig)
+        save_pdf(fig, f"{IMG_DIR}/seed_drift.pdf"); plt.close(fig)
         return drift_vals, hash_match
 
 class LatencyPrivacyEval:
@@ -83,11 +83,11 @@ class LatencyPrivacyEval:
         print(f"[EVAL] membership-inference accuracy {acc:.2f}% (≈50 expected)")
 
         # plots
-        ensure_dir(".research/iteration1/images")
+        ensure_dir(IMG_DIR)
         import matplotlib.pyplot as plt, seaborn as sns
         sns.set_theme()
         fig, ax = plt.subplots(figsize=(4,4))
         sns.barplot(x=["decode","ddim"], y=[decode_t*1e3, ddim_t], ax=ax)
         ax.set_ylabel("Latency (ms)")
-        save_pdf(fig, ".research/iteration1/images/latency.pdf"); plt.close(fig)
+        save_pdf(fig, f"{IMG_DIR}/latency.pdf"); plt.close(fig)
         return decode_t, ddim_t, acc

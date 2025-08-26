@@ -29,7 +29,7 @@ import torchvision.transforms as T
 import numpy as np
 
 from .preprocess import get_tasks_datasets
-from .utils import seed_everything, SGHRBuffer, SimpleHead, save_pdf, ensure_dir
+from .utils import seed_everything, SGHRBuffer, SimpleHead, save_pdf, ensure_dir, IMG_DIR
 
 ###########################################################################
 #                       Training routine                                  #
@@ -118,7 +118,7 @@ def run_training(cfg: dict) -> dict:
         mem_hist.append(mem)
 
     # plots -----------------------------------------------------------
-    ensure_dir(".research/iteration1/images")
+    ensure_dir(IMG_DIR)
     from matplotlib import pyplot as plt
     import seaborn as sns
     sns.set_theme()
@@ -126,11 +126,11 @@ def run_training(cfg: dict) -> dict:
     fig, ax = plt.subplots(figsize=(6,4))
     sns.lineplot(x=list(range(1,cfg["n_tasks"]+1)), y=acc_hist, marker="o", ax=ax)
     ax.set_xlabel("Task"); ax.set_ylabel("Accuracy (%)")
-    save_pdf(fig, ".research/iteration1/images/accuracy_curve.pdf"); plt.close(fig)
+    save_pdf(fig, f"{IMG_DIR}/accuracy_curve.pdf"); plt.close(fig)
 
     fig2, ax2 = plt.subplots(figsize=(6,4))
     sns.lineplot(x=list(range(1,cfg["n_tasks"]+1)), y=mem_hist, marker="o", ax=ax2)
-    ax2.set_xlabel("Task"); ax2.set_ylabel("Memory (kB)")
-    save_pdf(fig2, ".research/iteration1/images/memory_growth.pdf"); plt.close(fig2)
+    ax2.set_xlabel("Task"); ax2.set_ylabel("Memory (kB")
+    save_pdf(fig2, f"{IMG_DIR}/memory_growth.pdf"); plt.close(fig2)
 
     return {"accuracy": acc_hist, "memory_kb": mem_hist}

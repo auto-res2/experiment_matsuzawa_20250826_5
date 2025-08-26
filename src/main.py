@@ -5,7 +5,7 @@ src/main.py
 Project entry-point (`python -m src.main`).  It loads the
 YAML configuration, executes training, then the evaluation
 suite.  Results and plots are written to the directory
-.research/iteration1/images as required.
+.research/iteration3/images as required.
 """
 from __future__ import annotations
 import yaml, pathlib, importlib
@@ -13,7 +13,7 @@ from types import SimpleNamespace
 
 from .train import run_training
 from .evaluate import SeedStabilityEval, LatencyPrivacyEval
-from .utils import ensure_dir
+from .utils import ensure_dir, IMG_DIR
 
 ###########################################################################
 #                       Load configuration                                #
@@ -43,7 +43,7 @@ def _load_cfg() -> dict:
 
 def main():
     cfg = _load_cfg()
-    ensure_dir(".research/iteration1/images")
+    ensure_dir(IMG_DIR)
 
     # ---------------- training -----------------
     results = run_training(cfg)
