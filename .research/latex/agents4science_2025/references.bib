@@ -5,3 +5,562 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{author-year-calibrating,
+ title = {Calibrating CNNs for Lifelong Learning}
+}
+
+@article{author-year-contextual,
+ title = {Contextual Transformation Networks for Online Continual Learning}
+}
+
+@article{author-year-decoupling,
+ title = {Decoupling Learning and Remembering: A Bilevel Memory Framework With Knowledge Projection for Task-Incremental Learning}
+}
+
+@article{author-year-long,
+ title = {Long Live the Lottery: The Existence of Winning Tickets in Lifelong Learning}
+}
+
+@article{author-year-mecta,
+ title = {MECTA: Memory-Economic Continual Test-Time Model Adaptation}
+}
+
+@article{author-year-online,
+ title = {Online Constrained Meta-Learning: Provable Guarantees for Generalization}
+}
+
+@article{author-year-retrospective,
+ title = {Retrospective Adversarial Replay for Continual Learning}
+}
+
+@article{bonicelli-2022-the,
+ abstract = {Rehearsal approaches enjoy immense popularity with Continual Learning (CL)
+practitioners. These methods collect samples from previously encountered data
+distributions in a small memory buffer; subsequently, they repeatedly optimize
+on the latter to prevent catastrophic forgetting. This work draws attention to
+a hidden pitfall of this widespread practice: repeated optimization on a small
+pool of data inevitably leads to tight and unstable decision boundaries, which
+are a major hindrance to generalization. To address this issue, we propose
+Lipschitz-DrivEn Rehearsal (LiDER), a surrogate objective that induces
+smoothness in the backbone network by constraining its layer-wise Lipschitz
+constants w.r.t. replay examples. By means of extensive experiments, we show
+that applying LiDER delivers a stable performance gain to several
+state-of-the-art rehearsal CL methods across multiple datasets, both in the
+presence and absence of pre-training. Through additional ablative experiments,
+we highlight peculiar aspects of buffer overfitting in CL and better
+characterize the effect produced by LiDER. Code is available at
+https://github.com/aimagelab/LiDER},
+ arxiv_url = {https://arxiv.org/pdf/2210.06443v2.pdf},
+ author = {Lorenzo Bonicelli and Matteo Boschini and Angelo Porrello and Concetto Spampinato and Simone Calderara},
+ github_url = {https://github.com/aimagelab/LiDER},
+ title = {On the Effectiveness of Lipschitz-Driven Rehearsal in Continual Learning},
+ year = {2022}
+}
+
+@article{caccia-2019-online,
+ abstract = {We introduce and study the problem of Online Continual Compression, where one
+attempts to simultaneously learn to compress and store a representative dataset
+from a non i.i.d data stream, while only observing each sample once. A naive
+application of auto-encoders in this setting encounters a major challenge:
+representations derived from earlier encoder states must be usable by later
+decoder states. We show how to use discrete auto-encoders to effectively
+address this challenge and introduce Adaptive Quantization Modules (AQM) to
+control variation in the compression ability of the module at any given stage
+of learning. This enables selecting an appropriate compression for incoming
+samples, while taking into account overall memory constraints and current
+progress of the learned compression. Unlike previous methods, our approach does
+not require any pretraining, even on challenging datasets. We show that using
+AQM to replace standard episodic memory in continual learning settings leads to
+significant gains on continual learning benchmarks. Furthermore we demonstrate
+this approach with larger images, LiDAR, and reinforcement learning
+environments.},
+ arxiv_url = {https://arxiv.org/pdf/1911.08019v3.pdf},
+ author = {Lucas Caccia and Eugene Belilovsky and Massimo Caccia and Joelle Pineau},
+ title = {Online Learned Continual Compression with Adaptive Quantization Modules},
+ year = {2019}
+}
+
+@article{chaudhry-2020-continual,
+ abstract = {In continual learning (CL), a learner is faced with a sequence of tasks,
+arriving one after the other, and the goal is to remember all the tasks once
+the continual learning experience is finished. The prior art in CL uses
+episodic memory, parameter regularization or extensible network structures to
+reduce interference among tasks, but in the end, all the approaches learn
+different tasks in a joint vector space. We believe this invariably leads to
+interference among different tasks. We propose to learn tasks in different
+(low-rank) vector subspaces that are kept orthogonal to each other in order to
+minimize interference. Further, to keep the gradients of different tasks coming
+from these subspaces orthogonal to each other, we learn isometric mappings by
+posing network training as an optimization problem over the Stiefel manifold.
+To the best of our understanding, we report, for the first time, strong results
+over experience-replay baseline with and without memory on standard
+classification benchmarks in continual learning. The code is made publicly
+available.},
+ arxiv_url = {https://arxiv.org/pdf/2010.11635v2.pdf},
+ author = {Arslan Chaudhry and Naeemullah Khan and Puneet K. Dokania and Philip H. S. Torr},
+ github_url = {https://github.com/arslan-chaudhry/orthog_subspace},
+ journal = {NeurIPS, 2020},
+ title = {Continual Learning in Low-rank Orthogonal Subspaces},
+ year = {2020}
+}
+
+@article{deng-2022-remember,
+ abstract = {We propose an algorithm that compresses the critical information of a large
+dataset into compact addressable memories. These memories can then be recalled
+to quickly re-train a neural network and recover the performance (instead of
+storing and re-training on the full original dataset). Building upon the
+dataset distillation framework, we make a key observation that a shared common
+representation allows for more efficient and effective distillation.
+Concretely, we learn a set of bases (aka ``memories'') which are shared between
+classes and combined through learned flexible addressing functions to generate
+a diverse set of training examples. This leads to several benefits: 1) the size
+of compressed data does not necessarily grow linearly with the number of
+classes; 2) an overall higher compression rate with more effective distillation
+is achieved; and 3) more generalized queries are allowed beyond recalling the
+original classes. We demonstrate state-of-the-art results on the dataset
+distillation task across six benchmarks, including up to 16.5% and 9.7% in
+retained accuracy improvement when distilling CIFAR10 and CIFAR100
+respectively. We then leverage our framework to perform continual learning,
+achieving state-of-the-art results on four benchmarks, with 23.2% accuracy
+improvement on MANY. The code is released on our project webpage
+https://github.com/princetonvisualai/RememberThePast-DatasetDistillation.},
+ arxiv_url = {https://arxiv.org/pdf/2206.02916v2.pdf},
+ author = {Zhiwei Deng and Olga Russakovsky},
+ github_url = {https://github.com/princetonvisualai/RememberThePast-DatasetDistillation},
+ title = {Remember the Past: Distilling Datasets into Addressable Memories for Neural Networks},
+ year = {2022}
+}
+
+@article{kim-2023-the,
+ abstract = {A primary goal of class-incremental learning is to strike a balance between
+stability and plasticity, where models should be both stable enough to retain
+knowledge learned from previously seen classes, and plastic enough to learn
+concepts from new classes. While previous works demonstrate strong performance
+on class-incremental benchmarks, it is not clear whether their success comes
+from the models being stable, plastic, or a mixture of both. This paper aims to
+shed light on how effectively recent class-incremental learning algorithms
+address the stability-plasticity trade-off. We establish analytical tools that
+measure the stability and plasticity of feature representations, and employ
+such tools to investigate models trained with various algorithms on large-scale
+class-incremental benchmarks. Surprisingly, we find that the majority of
+class-incremental learning algorithms heavily favor stability over plasticity,
+to the extent that the feature extractor of a model trained on the initial set
+of classes is no less effective than that of the final incremental model. Our
+observations not only inspire two simple algorithms that highlight the
+importance of feature representation analysis, but also suggest that
+class-incremental learning approaches, in general, should strive for better
+feature representation learning.},
+ arxiv_url = {https://arxiv.org/pdf/2304.01663v1.pdf},
+ author = {Dongwan Kim and Bohyung Han},
+ github_url = {https://github.com/kminsoo/AFC},
+ title = {On the Stability-Plasticity Dilemma of Class-Incremental Learning},
+ year = {2023}
+}
+
+@article{liang-2024-inflora,
+ abstract = {Continual learning requires the model to learn multiple tasks sequentially.
+In continual learning, the model should possess the ability to maintain its
+performance on old tasks (stability) and the ability to adapt to new tasks
+continuously (plasticity). Recently, parameter-efficient fine-tuning (PEFT),
+which involves freezing a pre-trained model and injecting a small number of
+learnable parameters to adapt to downstream tasks, has gained increasing
+popularity in continual learning. Although existing continual learning methods
+based on PEFT have demonstrated superior performance compared to those not
+based on PEFT, most of them do not consider how to eliminate the interference
+of the new task on the old tasks, which inhibits the model from making a good
+trade-off between stability and plasticity. In this work, we propose a new PEFT
+method, called interference-free low-rank adaptation (InfLoRA), for continual
+learning. InfLoRA injects a small number of parameters to reparameterize the
+pre-trained weights and shows that fine-tuning these injected parameters is
+equivalent to fine-tuning the pre-trained weights within a subspace.
+Furthermore, InfLoRA designs this subspace to eliminate the interference of the
+new task on the old tasks, making a good trade-off between stability and
+plasticity. Experimental results show that InfLoRA outperforms existing
+state-of-the-art continual learning methods on multiple datasets.},
+ arxiv_url = {https://arxiv.org/pdf/2404.00228v3.pdf},
+ author = {Yan-Shuo Liang and Wu-Jun Li},
+ title = {InfLoRA: Interference-Free Low-Rank Adaptation for Continual Learning},
+ year = {2024}
+}
+
+@article{liu-2022-navigating,
+ abstract = {Continual learning faces a crucial challenge of catastrophic forgetting. To
+address this challenge, experience replay (ER) that maintains a tiny subset of
+samples from previous tasks has been commonly used. Existing ER works usually
+focus on refining the learning objective for each task with a static memory
+construction policy. In this paper, we formulate the dynamic memory
+construction in ER as a combinatorial optimization problem, which aims at
+directly minimizing the global loss across all experienced tasks. We first
+apply three tactics to solve the problem in the offline setting as a starting
+point. To provide an approximate solution to this problem in the online
+continual learning setting, we further propose the Global Pseudo-task
+Simulation (GPS), which mimics future catastrophic forgetting of the current
+task by permutation. Our empirical results and analyses suggest that the GPS
+consistently improves accuracy across four commonly used vision benchmarks. We
+have also shown that our GPS can serve as the unified framework for integrating
+various memory construction policies in existing ER works.},
+ arxiv_url = {https://arxiv.org/pdf/2210.08442v1.pdf},
+ author = {Yejia Liu and Wang Zhu and Shaolei Ren},
+ github_url = {https://github.com/liuyejia/gps_cl},
+ title = {Navigating Memory Construction by Global Pseudo-Task Simulation for Continual Learning},
+ year = {2022}
+}
+
+@article{prabhu-2023-computationally,
+ abstract = {Continual Learning (CL) aims to sequentially train models on streams of
+incoming data that vary in distribution by preserving previous knowledge while
+adapting to new data. Current CL literature focuses on restricted access to
+previously seen data, while imposing no constraints on the computational budget
+for training. This is unreasonable for applications in-the-wild, where systems
+are primarily constrained by computational and time budgets, not storage. We
+revisit this problem with a large-scale benchmark and analyze the performance
+of traditional CL approaches in a compute-constrained setting, where effective
+memory samples used in training can be implicitly restricted as a consequence
+of limited computation. We conduct experiments evaluating various CL sampling
+strategies, distillation losses, and partial fine-tuning on two large-scale
+datasets, namely ImageNet2K and Continual Google Landmarks V2 in data
+incremental, class incremental, and time incremental settings. Through
+extensive experiments amounting to a total of over 1500 GPU-hours, we find
+that, under compute-constrained setting, traditional CL approaches, with no
+exception, fail to outperform a simple minimal baseline that samples uniformly
+from memory. Our conclusions are consistent in a different number of stream
+time steps, e.g., 20 to 200, and under several computational budgets. This
+suggests that most existing CL methods are particularly too computationally
+expensive for realistic budgeted deployment. Code for this project is available
+at: https://github.com/drimpossible/BudgetCL.},
+ arxiv_url = {https://arxiv.org/pdf/2303.11165v2.pdf},
+ author = {Ameya Prabhu and Hasan Abed Al Kader Hammoud and Puneet Dokania and Philip H. S. Torr and Ser-Nam Lim and Bernard Ghanem and Adel Bibi},
+ title = {Computationally Budgeted Continual Learning: What Does Matter?},
+ year = {2023}
+}
+
+@article{sun-2023-regularizing,
+ abstract = {Continual learning aims to learn on non-stationary data streams without
+catastrophically forgetting previous knowledge. Prevalent replay-based methods
+address this challenge by rehearsing on a small buffer holding the seen data,
+for which a delicate sample selection strategy is required. However, existing
+selection schemes typically seek only to maximize the utility of the ongoing
+selection, overlooking the interference between successive rounds of selection.
+Motivated by this, we dissect the interaction of sequential selection steps
+within a framework built on influence functions. We manage to identify a new
+class of second-order influences that will gradually amplify incidental bias in
+the replay buffer and compromise the selection process. To regularize the
+second-order effects, a novel selection objective is proposed, which also has
+clear connections to two widely adopted criteria. Furthermore, we present an
+efficient implementation for optimizing the proposed criterion. Experiments on
+multiple continual learning benchmarks demonstrate the advantage of our
+approach over state-of-the-art methods. Code is available at
+https://github.com/feifeiobama/InfluenceCL.},
+ arxiv_url = {https://arxiv.org/pdf/2304.10177v1.pdf},
+ author = {Zhicheng Sun and Yadong Mu and Gang Hua},
+ title = {Regularizing Second-Order Influences for Continual Learning},
+ year = {2023}
+}
+
+@article{tang-2020-graph,
+ abstract = {Despite significant advances, continual learning models still suffer from
+catastrophic forgetting when exposed to incrementally available data from
+non-stationary distributions. Rehearsal approaches alleviate the problem by
+maintaining and replaying a small episodic memory of previous samples, often
+implemented as an array of independent memory slots. In this work, we propose
+to augment such an array with a learnable random graph that captures pairwise
+similarities between its samples, and use it not only to learn new tasks but
+also to guard against forgetting. Empirical results on several benchmark
+datasets show that our model consistently outperforms recently proposed
+baselines for task-free continual learning.},
+ arxiv_url = {https://arxiv.org/pdf/2007.04813v2.pdf},
+ author = {Binh Tang and David S. Matteson},
+ github_url = {https://github.com/mattriemer/mer},
+ title = {Graph-Based Continual Learning},
+ year = {2020}
+}
+
+@article{tong-2022-incremental,
+ abstract = {This work proposes a minimal computational model for learning structured
+memories of multiple object classes in an incremental setting. Our approach is
+based on establishing a closed-loop transcription between the classes and a
+corresponding set of subspaces, known as a linear discriminative
+representation, in a low-dimensional feature space. Our method is simpler than
+existing approaches for incremental learning, and more efficient in terms of
+model size, storage, and computation: it requires only a single, fixed-capacity
+autoencoding network with a feature space that is used for both discriminative
+and generative purposes. Network parameters are optimized simultaneously
+without architectural manipulations, by solving a constrained minimax game
+between the encoding and decoding maps over a single rate reduction-based
+objective. Experimental results show that our method can effectively alleviate
+catastrophic forgetting, achieving significantly better performance than prior
+work of generative replay on MNIST, CIFAR-10, and ImageNet-50, despite
+requiring fewer resources. Source code can be found at
+https://github.com/tsb0601/i-CTRL},
+ arxiv_url = {https://arxiv.org/pdf/2202.05411v3.pdf},
+ author = {Shengbang Tong and Xili Dai and Ziyang Wu and Mingyang Li and Brent Yi and Yi Ma},
+ github_url = {https://github.com/tsb0601/i-CTRL},
+ title = {Incremental Learning of Structured Memory via Closed-Loop Transcription},
+ year = {2022}
+}
+
+@article{wang-2022-improving,
+ abstract = {Task-free continual learning (CL) aims to learn a non-stationary data stream
+without explicit task definitions and not forget previous knowledge. The widely
+adopted memory replay approach could gradually become less effective for long
+data streams, as the model may memorize the stored examples and overfit the
+memory buffer. Second, existing methods overlook the high uncertainty in the
+memory data distribution since there is a big gap between the memory data
+distribution and the distribution of all the previous data examples. To address
+these problems, for the first time, we propose a principled memory evolution
+framework to dynamically evolve the memory data distribution by making the
+memory buffer gradually harder to be memorized with distributionally robust
+optimization (DRO). We then derive a family of methods to evolve the memory
+buffer data in the continuous probability measure space with Wasserstein
+gradient flow (WGF). The proposed DRO is w.r.t the worst-case evolved memory
+data distribution, thus guarantees the model performance and learns
+significantly more robust features than existing memory-replay-based methods.
+Extensive experiments on existing benchmarks demonstrate the effectiveness of
+the proposed methods for alleviating forgetting. As a by-product of the
+proposed framework, our method is more robust to adversarial examples than
+existing task-free CL methods. Code is available on GitHub
+\url{https://github.com/joey-wang123/DRO-Task-free}},
+ arxiv_url = {https://arxiv.org/pdf/2207.07256v2.pdf},
+ author = {Zhenyi Wang and Li Shen and Le Fang and Qiuling Suo and Tiehang Duan and Mingchen Gao},
+ title = {Improving Task-free Continual Learning by Distributionally Robust Memory Evolution},
+ year = {2022}
+}
+
+@article{wang-2022-sparcl,
+ abstract = {Existing work in continual learning (CL) focuses on mitigating catastrophic
+forgetting, i.e., model performance deterioration on past tasks when learning a
+new task. However, the training efficiency of a CL system is
+under-investigated, which limits the real-world application of CL systems under
+resource-limited scenarios. In this work, we propose a novel framework called
+Sparse Continual Learning(SparCL), which is the first study that leverages
+sparsity to enable cost-effective continual learning on edge devices. SparCL
+achieves both training acceleration and accuracy preservation through the
+synergy of three aspects: weight sparsity, data efficiency, and gradient
+sparsity. Specifically, we propose task-aware dynamic masking (TDM) to learn a
+sparse network throughout the entire CL process, dynamic data removal (DDR) to
+remove less informative training data, and dynamic gradient masking (DGM) to
+sparsify the gradient updates. Each of them not only improves efficiency, but
+also further mitigates catastrophic forgetting. SparCL consistently improves
+the training efficiency of existing state-of-the-art (SOTA) CL methods by at
+most 23X less training FLOPs, and, surprisingly, further improves the SOTA
+accuracy by at most 1.7%. SparCL also outperforms competitive baselines
+obtained from adapting SOTA sparse training methods to the CL setting in both
+efficiency and accuracy. We also evaluate the effectiveness of SparCL on a real
+mobile phone, further indicating the practical potential of our method.},
+ arxiv_url = {https://arxiv.org/pdf/2209.09476v1.pdf},
+ author = {Zifeng Wang and Zheng Zhan and Yifan Gong and Geng Yuan and Wei Niu and Tong Jian and Bin Ren and Stratis Ioannidis and Yanzhi Wang and Jennifer Dy},
+ title = {SparCL: Sparse Continual Learning on the Edge},
+ year = {2022}
+}
+
+@article{wang-2023-task,
+ abstract = {Parameter regularization or allocation methods are effective in overcoming
+catastrophic forgetting in lifelong learning. However, they solve all tasks in
+a sequence uniformly and ignore the differences in the learning difficulty of
+different tasks. So parameter regularization methods face significant
+forgetting when learning a new task very different from learned tasks, and
+parameter allocation methods face unnecessary parameter overhead when learning
+simple tasks. In this paper, we propose the Parameter Allocation &
+Regularization (PAR), which adaptively select an appropriate strategy for each
+task from parameter allocation and regularization based on its learning
+difficulty. A task is easy for a model that has learned tasks related to it and
+vice versa. We propose a divergence estimation method based on the
+Nearest-Prototype distance to measure the task relatedness using only features
+of the new task. Moreover, we propose a time-efficient relatedness-aware
+sampling-based architecture search strategy to reduce the parameter overhead
+for allocation. Experimental results on multiple benchmarks demonstrate that,
+compared with SOTAs, our method is scalable and significantly reduces the
+model's redundancy while improving the model's performance. Further qualitative
+analysis indicates that PAR obtains reasonable task-relatedness.},
+ arxiv_url = {https://arxiv.org/pdf/2304.05288v1.pdf},
+ author = {Wenjin Wang and Yunqing Hu and Qianglong Chen and Yin Zhang},
+ github_url = {https://github.com/WenjinW/PAR},
+ title = {Task Difficulty Aware Parameter Allocation & Regularization for Lifelong Learning},
+ year = {2023}
+}
+
+@article{yoo-2024-layerwise,
+ abstract = {In online continual learning, a neural network incrementally learns from a
+non-i.i.d. data stream. Nearly all online continual learning methods employ
+experience replay to simultaneously prevent catastrophic forgetting and
+underfitting on past data. Our work demonstrates a limitation of this approach:
+neural networks trained with experience replay tend to have unstable
+optimization trajectories, impeding their overall accuracy. Surprisingly, these
+instabilities persist even when the replay buffer stores all previous training
+examples, suggesting that this issue is orthogonal to catastrophic forgetting.
+We minimize these instabilities through a simple modification of the
+optimization geometry. Our solution, Layerwise Proximal Replay (LPR), balances
+learning from new and replay data while only allowing for gradual changes in
+the hidden activation of past data. We demonstrate that LPR consistently
+improves replay-based online continual learning methods across multiple problem
+settings, regardless of the amount of available replay memory.},
+ arxiv_url = {https://arxiv.org/pdf/2402.09542v3.pdf},
+ author = {Jason Yoo and Yunpeng Liu and Frank Wood and Geoff Pleiss},
+ github_url = {https://github.com/plai-group/LPR},
+ title = {Layerwise Proximal Replay: A Proximal Point Method for Online Continual Learning},
+ year = {2024}
+}
+
+@article{zhao-2024-safe,
+ abstract = {Continual learning aims to incrementally acquire new concepts in data streams
+while resisting forgetting previous knowledge. With the rise of powerful
+pre-trained models (PTMs), there is a growing interest in training incremental
+learning systems using these foundation models, rather than learning from
+scratch. Existing works often view PTMs as a strong initial point and directly
+apply parameter-efficient tuning (PET) in the first session for adapting to
+downstream tasks. In the following sessions, most methods freeze model
+parameters for tackling forgetting issues. However, applying PET directly to
+downstream data cannot fully explore the inherent knowledge in PTMs.
+Additionally, freezing the parameters in incremental sessions hinders models'
+plasticity to novel concepts not covered in the first session. To solve the
+above issues, we propose a Slow And Fast parameter-Efficient tuning (SAFE)
+framework. In particular, to inherit general knowledge from foundation models,
+we include a transfer loss function by measuring the correlation between the
+PTM and the PET-applied model. After calibrating in the first session, the slow
+efficient tuning parameters can capture more informative features, improving
+generalization to incoming classes. Moreover, to further incorporate novel
+concepts, we strike a balance between stability and plasticity by fixing slow
+efficient tuning parameters and continuously updating the fast ones.
+Specifically, a cross-classification loss with feature alignment is proposed to
+circumvent catastrophic forgetting. During inference, we introduce an
+entropy-based aggregation strategy to dynamically utilize the complementarity
+in the slow and fast learners. Extensive experiments on seven benchmark
+datasets verify the effectiveness of our method by significantly surpassing the
+state-of-the-art.},
+ arxiv_url = {https://arxiv.org/pdf/2411.02175v1.pdf},
+ author = {Linglan Zhao and Xuerui Zhang and Ke Yan and Shouhong Ding and Weiran Huang},
+ github_url = {https://github.com/MIFA-Lab/SAFE},
+ title = {SAFE: Slow and Fast Parameter-Efficient Tuning for Continual Learning with Pre-Trained Models},
+ year = {2024}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{aljundi-2017-memory,
+ abstract = {Humans can learn in a continuous manner. Old rarely utilized knowledge can be
+overwritten by new incoming information while important, frequently used
+knowledge is prevented from being erased. In artificial learning systems,
+lifelong learning so far has focused mainly on accumulating knowledge over
+tasks and overcoming catastrophic forgetting. In this paper, we argue that,
+given the limited model capacity and the unlimited new information to be
+learned, knowledge has to be preserved or erased selectively. Inspired by
+neuroplasticity, we propose a novel approach for lifelong learning, coined
+Memory Aware Synapses (MAS). It computes the importance of the parameters of a
+neural network in an unsupervised and online manner. Given a new sample which
+is fed to the network, MAS accumulates an importance measure for each parameter
+of the network, based on how sensitive the predicted output function is to a
+change in this parameter. When learning a new task, changes to important
+parameters can then be penalized, effectively preventing important knowledge
+related to previous tasks from being overwritten. Further, we show an
+interesting connection between a local version of our method and Hebb's
+rule,which is a model for the learning process in the brain. We test our method
+on a sequence of object recognition tasks and on the challenging problem of
+learning an embedding for predicting $<$subject, predicate, object$>$ triplets.
+We show state-of-the-art performance and, for the first time, the ability to
+adapt the importance of the parameters based on unlabeled data towards what the
+network needs (not) to forget, which may vary depending on test conditions.},
+ arxiv_url = {https://arxiv.org/pdf/1711.09601v4.pdf},
+ author = {Rahaf Aljundi and Francesca Babiloni and Mohamed Elhoseiny and Marcus Rohrbach and Tinne Tuytelaars},
+ title = {Memory aware synapses: Learning what (not) to forget},
+ year = {2017}
+}
+
+@article{bellec-2017-deep,
+ abstract = {Neuromorphic hardware tends to pose limits on the connectivity of deep
+networks that one can run on them. But also generic hardware and software
+implementations of deep learning run more efficiently for sparse networks.
+Several methods exist for pruning connections of a neural network after it was
+trained without connectivity constraints. We present an algorithm, DEEP R, that
+enables us to train directly a sparsely connected neural network. DEEP R
+automatically rewires the network during supervised training so that
+connections are there where they are most needed for the task, while its total
+number is all the time strictly bounded. We demonstrate that DEEP R can be used
+to train very sparse feedforward and recurrent neural networks on standard
+benchmark tasks with just a minor loss in performance. DEEP R is based on a
+rigorous theoretical foundation that views rewiring as stochastic sampling of
+network configurations from a posterior.},
+ arxiv_url = {https://arxiv.org/pdf/1711.05136v5.pdf},
+ author = {Guillaume Bellec and David Kappel and Wolfgang Maass and Robert Legenstein},
+ title = {Deep rewiring: Training very sparse deep networks},
+ year = {2017}
+}
+
+@article{borsos-2020-coresets,
+ abstract = {Coresets are small data summaries that are sufficient for model training.
+They can be maintained online, enabling efficient handling of large data
+streams under resource constraints. However, existing constructions are limited
+to simple models such as k-means and logistic regression. In this work, we
+propose a novel coreset construction via cardinality-constrained bilevel
+optimization. We show how our framework can efficiently generate coresets for
+deep neural networks, and demonstrate its empirical benefits in continual
+learning and in streaming settings.},
+ arxiv_url = {https://arxiv.org/pdf/2006.03875v2.pdf},
+ author = {Zalán Borsos and Mojmír Mutný and Andreas Krause},
+ title = {Coresets via bilevel optimization for continual learning and streaming},
+ year = {2020}
+}
+
+@article{brundage-2018-the,
+ abstract = {This report surveys the landscape of potential security threats from
+malicious uses of AI, and proposes ways to better forecast, prevent, and
+mitigate these threats. After analyzing the ways in which AI may influence the
+threat landscape in the digital, physical, and political domains, we make four
+high-level recommendations for AI researchers and other stakeholders. We also
+suggest several promising areas for further research that could expand the
+portfolio of defenses, or make attacks less effective or harder to execute.
+Finally, we discuss, but do not conclusively resolve, the long-term equilibrium
+of attackers and defenders.},
+ arxiv_url = {https://arxiv.org/pdf/1802.07228v2.pdf},
+ author = {Miles Brundage and Shahar Avin and Jack Clark and Helen Toner and Peter Eckersley and Ben Garfinkel and Allan Dafoe and Paul Scharre and Thomas Zeitzoff and Bobby Filar and Hyrum Anderson and Heather Roff and Gregory C. Allen and Jacob Steinhardt and Carrick Flynn and Seán Ó hÉigeartaigh and SJ Beard and Haydn Belfield and Sebastian Farquhar and Clare Lyle and Rebecca Crootof and Owain Evans and Michael Page and Joanna Bryson and Roman Yampolskiy and Dario Amodei},
+ title = {The malicious use of artificial intelligence: Forecasting, prevention, and mitigation},
+ year = {2018}
+}
+
+@article{canziani-2016-analysis,
+ abstract = {Since the emergence of Deep Neural Networks (DNNs) as a prominent technique
+in the field of computer vision, the ImageNet classification challenge has
+played a major role in advancing the state-of-the-art. While accuracy figures
+have steadily increased, the resource utilisation of winning models has not
+been properly taken into account. In this work, we present a comprehensive
+analysis of important metrics in practical applications: accuracy, memory
+footprint, parameters, operations count, inference time and power consumption.
+Key findings are: (1) power consumption is independent of batch size and
+architecture; (2) accuracy and inference time are in a hyperbolic relationship;
+(3) energy constraint is an upper bound on the maximum achievable accuracy and
+model complexity; (4) the number of operations is a reliable estimate of the
+inference time. We believe our analysis provides a compelling set of
+information that helps design and engineer efficient DNNs.},
+ arxiv_url = {https://arxiv.org/pdf/1605.07678v4.pdf},
+ author = {Alfredo Canziani and Adam Paszke and Eugenio Culurciello},
+ title = {An analysis of deep neural network models for practical applications},
+ year = {2016}
+}
+
+@article{cha-2021-contrastive,
+ abstract = {Recent breakthroughs in self-supervised learning show that such algorithms
+learn visual representations that can be transferred better to unseen tasks
+than joint-training methods relying on task-specific supervision. In this
+paper, we found that the similar holds in the continual learning con-text:
+contrastively learned representations are more robust against the catastrophic
+forgetting than jointly trained representations. Based on this novel
+observation, we propose a rehearsal-based continual learning algorithm that
+focuses on continually learning and maintaining transferable representations.
+More specifically, the proposed scheme (1) learns representations using the
+contrastive learning objective, and (2) preserves learned representations using
+a self-supervised distillation step. We conduct extensive experimental
+validations under popular benchmark image classification datasets, where our
+method sets the new state-of-the-art performance.},
+ arxiv_url = {https://arxiv.org/pdf/2106.14413v1.pdf},
+ author = {Hyuntak Cha and Jaeho Lee and Jinwoo Shin},
+ title = {Co2l: Contrastive continual learning},
+ year = {2021}
+}
