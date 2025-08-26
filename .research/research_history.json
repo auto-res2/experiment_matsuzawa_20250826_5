@@ -1,0 +1,10 @@
+{
+  "research_topic": "Continuous Learningのメモリ効率に関して改善したい",
+  "queries": [
+    "memory efficient continual learning",
+    "memory compression continual learning",
+    "memory constrained incremental learning",
+    "parameter efficient lifelong learning",
+    "replay buffer continual learning"
+  ]
+}
