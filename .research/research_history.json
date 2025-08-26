@@ -6,5 +6,82 @@
     "state space vision",
     "sequence model memory",
     "SSM GPU memory"
+  ],
+  "research_study_list": [
+    {
+      "title": "Vision Mamba Mender"
+    },
+    {
+      "title": "VMamba: Visual State Space Model"
+    },
+    {
+      "title": "Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model"
+    },
+    {
+      "title": "MA-LMM: Memory-Augmented Large Multimodal Model for Long-Term Video Understanding"
+    },
+    {
+      "title": "Multi-Scale VMamba: Hierarchy in Hierarchy Visual State Space Model"
+    },
+    {
+      "title": "Vision Mamba Mender"
+    },
+    {
+      "title": "VMamba: Visual State Space Model"
+    },
+    {
+      "title": "PointMamba: A Simple State Space Model for Point Cloud Analysis"
+    },
+    {
+      "title": "Multi-Scale VMamba: Hierarchy in Hierarchy Visual State Space Model"
+    },
+    {
+      "title": "The Mamba in the Llama: Distilling and Accelerating Hybrid Models"
+    },
+    {
+      "title": "State Space Models for Event Cameras"
+    },
+    {
+      "title": "Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model"
+    },
+    {
+      "title": "A 2-Dimensional State Space Layer for Spatial Inductive Bias"
+    },
+    {
+      "title": "On the Parameterization and Initialization of Diagonal State Space Models"
+    },
+    {
+      "title": "State-space models with layer-wise nonlinearity are universal approximators with exponential decaying memory"
+    },
+    {
+      "title": "General Sequential Episodic Memory Model"
+    },
+    {
+      "title": "Recurrent Memory Transformer"
+    },
+    {
+      "title": "Sequential Memory with Temporal Predictive Coding"
+    },
+    {
+      "title": "Explain My Surprise: Learning Efficient Long-Term Memory by predicting uncertain outcomes"
+    },
+    {
+      "title": "Explain My Surprise: Learning Efficient Long-Term Memory by predicting uncertain outcomes"
+    },
+    {
+      "title": "StableSSM: Alleviating the Curse of Memory in State-space Models through Stable Reparameterization"
+    },
+    {
+      "title": "Diffusion Models Without Attention"
+    },
+    {
+      "title": "$S^3$: Increasing GPU Utilization during Generative Inference for Higher Throughput"
+    },
+    {
+      "title": "Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model"
+    },
+    {
+      "title": "Hungry Hungry Hippos: Towards Language Modeling with State Space Models"
+    }
   ]
 }
