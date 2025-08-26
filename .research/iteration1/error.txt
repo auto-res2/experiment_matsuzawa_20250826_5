@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/main.py", line 146, in <module>
+    main()
+  File "/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/main.py", line 72, in main
+    train_res = train_distill_proxy(tcfg)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/train.py", line 325, in train_distill_proxy
+    batch = next(dl_it)
+            ^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 790, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/preprocess.py", line 28, in __getitem__
+    img = self._make_pattern(H, W, typ)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/experiment_matsuzawa_20250826_5/experiment_matsuzawa_20250826_5/src/preprocess.py", line 37, in _make_pattern
+    arr = (np.sin(2 * np.pi * x / 4)[None, :, None] * np.ones((H, W, 3))).repeat(H, axis=0)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+ValueError: operands could not be broadcast together with shapes (1,1,1,32) (32,32,3) 
