@@ -284,7 +284,7 @@ class TrainConfig:
     seed: int = 123
     device: str = "auto"
     fp16: bool = False
-    images_dir: str = ".research/iteration1/images"
+    images_dir: str = ".research/iteration2/images"
     models_dir: str = "models"
 
 

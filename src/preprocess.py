@@ -33,8 +33,10 @@ class SyntheticPatterns(Dataset):
         if typ == 0:  # Gaussian noise
             arr = self.rng.randn(H, W, 3)
         elif typ == 1:  # Vertical stripes
-            x = np.arange(W)[None, :]
-            arr = (np.sin(2 * np.pi * x / 4)[None, :, None] * np.ones((H, W, 3))).repeat(H, axis=0)
+            x = np.arange(W)[None, :]  # shape (1, W)
+            stripe = np.sin(2 * np.pi * x / 4)  # (1, W)
+            stripe = np.repeat(stripe, H, axis=0)  # (H, W)
+            arr = np.repeat(stripe[:, :, None], 3, axis=2)  # (H, W, 3)
         elif typ == 2:  # Checkerboard
             yy, xx = np.mgrid[:H, :W]
             arr = (((yy // 4 + xx // 4) % 2)[..., None] * np.ones(3)).astype(np.float32)

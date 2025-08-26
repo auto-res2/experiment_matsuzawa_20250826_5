@@ -192,6 +192,7 @@ class DFDiffSampler(SamplerAPI):
         trace.frac_full.append(1.0)
         trace.frac_delta.append(0.0)
         timer.mark()
+        last_y = _y0
         # Subsequent steps
         router_stats = {"frac_full": [], "frac_delta": []}
         for si in range(1, steps):
@@ -200,6 +201,7 @@ class DFDiffSampler(SamplerAPI):
                 x, t, step_idx=si, total_steps=steps, router_sparsity_lambda=self.router_lambda,
                 router_stats=router_stats, training=False
             )
+            last_y = _y
             if torch.cuda.is_available() and device.startswith("cuda"):
                 trace.step_mem_mb.append(torch.cuda.memory_allocated() / (1024 ** 2))
             f_full = router_stats['frac_full'][-1]
@@ -208,7 +210,7 @@ class DFDiffSampler(SamplerAPI):
             trace.frac_delta.append(f_delta)
             timer.mark()
         trace.step_ms = timer.durations_ms()
-        imgs = _y.detach().clamp(0, 1)
+        imgs = last_y.detach().clamp(0, 1)
         return (imgs, trace) if return_trace else imgs
 
 # -----------------------------------------------------------------------------
@@ -222,8 +224,8 @@ class RunConfig:
     batch: int = 1
     fp16: bool = False
     device: str = "auto"
-    images_dir: str = ".research/iteration1/images"
-    results_dir: str = ".research/iteration1"
+    images_dir: str = ".research/iteration2/images"
+    results_dir: str = ".research/iteration2"
     # DF-Diff specific
     feature_bits: int = 8
     router_lambda: float = 1e-3
@@ -241,8 +243,8 @@ class QualityCfg:
     feature_bits: int = 8
     router_lambda: float = 1e-3
     delta_mult: float = 1.0
-    images_dir: str = ".research/iteration1/images"
-    results_dir: str = ".research/iteration1"
+    images_dir: str = ".research/iteration2/images"
+    results_dir: str = ".research/iteration2"
 
 
 @dataclass
@@ -252,8 +254,8 @@ class RobustCfg:
     batch: int = 1
     device: str = "auto"
     fp16: bool = False
-    images_dir: str = ".research/iteration1/images"
-    results_dir: str = ".research/iteration1"
+    images_dir: str = ".research/iteration2/images"
+    results_dir: str = ".research/iteration2"
 
 # -----------------------------------------------------------------------------
 # Plots helpers (save as high-quality PDF)
