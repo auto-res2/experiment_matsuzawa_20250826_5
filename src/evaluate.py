@@ -1,7 +1,7 @@
 """
 evaluate.py – contains the three toy experiments from the paper and all
 plotting / logging responsibilities.  Figures are stored under
-.research/iteration1/images as required.
+.research/iteration2/images as required.
 """
 from __future__ import annotations
 
@@ -18,8 +18,10 @@ from matplotlib import pyplot as plt
 
 from .train import EucEncoder, HypEncoder, SharedDecoder, train_autoencoder
 
-# Make sure the images directory exists before any plotting happens
-IMG_DIR = Path(".research/iteration1/images")
+# ---------------------------------------------------------------------
+# Image directory (changed to iteration2 as requested)
+# ---------------------------------------------------------------------
+IMG_DIR = Path(".research/iteration2/images")
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------
@@ -35,7 +37,7 @@ class ToySparseDiffuser(nn.Module):
             nn.Linear(latent_dim, 512), nn.ReLU(), nn.Linear(512, latent_dim)
         )
 
-    def forward(self, z: torch.Tensor) -> torch.Tensor:
+    def forward(self, z: torch.Tensor) -> torch.Tensor:  # noqa: N802 – keep paper naming
         h = z
         for _ in range(self.steps):
             h = self.net(h)
@@ -73,10 +75,9 @@ class AdaptiveScheduler:
     def allocate(self, kappa: float) -> Tuple[int, bool]:
         if kappa < self.tau_easy:
             return max(self.min_steps, self.K_skip), True
-        elif kappa > self.tau_hard:
+        if kappa > self.tau_hard:
             return self.K_max, False
-        else:
-            return self.min_steps, False
+        return self.min_steps, False
 
 
 class HDPlannerBaseline(nn.Module):
@@ -100,12 +101,12 @@ class HADuSPlanner(nn.Module):
         kappa = float(torch.rand(()))
         steps, cache = self.scheduler.allocate(kappa)
         if cache:
-            out = self.base.diffuser.net(obs)
+            out = self.base.diffuser.net(obs)  # single forward for cached case
         else:
             out = obs
             for _ in range(steps):
                 out = self.base.diffuser.net(out)
-        return self.adapter.decode(z_h) + 0.0 * out
+        return self.adapter.decode(z_h) + 0.0 * out  # keep comp-graph identical
 
 
 # ---------------------------------------------------------------------
@@ -125,7 +126,7 @@ class ToyEnv:
         self.t = 0
         return torch.randn(self.obs_dim)
 
-    def step(self, action):
+    def step(self, action):  # noqa: D401 – simple toy stub
         self.t += 1
         done = self.t >= self.horizon
         reward = float(torch.randn(()))
@@ -144,7 +145,7 @@ def run_exp1(num_episodes: int = 20, seed: int = 0):
 
     algos = {
         "baseline": HDPlannerBaseline(),
-        "hadus"  : HADuSPlanner(HDPlannerBaseline()),
+        "hadus": HADuSPlanner(HDPlannerBaseline()),
     }
 
     wall_clock: Dict[str, List[float]] = {k: [] for k in algos}
@@ -170,11 +171,11 @@ def run_exp1(num_episodes: int = 20, seed: int = 0):
     # PDF figure --------------------------------------------------------
     fig, ax = plt.subplots(figsize=(3, 2))
     sns.boxplot(data=[wall_clock[k] for k in algos], ax=ax)
+    ax.set_xticks(range(len(algos)))  # ensure fixed locator to suppress warning
     ax.set_xticklabels(list(algos.keys()))
     ax.set_ylabel("Wall-clock / s")
     ax.set_title("End-to-End wall-clock (toy)")
     fig.tight_layout()
-    (IMG_DIR / "wall_clock.pdf").with_suffix(".pdf")
     plt.savefig(IMG_DIR / "wall_clock.pdf", bbox_inches="tight")
     plt.close(fig)
 
@@ -183,7 +184,7 @@ def run_exp1(num_episodes: int = 20, seed: int = 0):
 # 4.   EXPERIMENT-2: latent distortion comparison
 # ---------------------------------------------------------------------
 
-def sample_se3_vectors(n: int) -> torch.Tensor:
+def sample_se3_vectors(n: int) -> torch.Tensor:  # kept local to keep file self-contained
     return torch.randn(n, 384)
 
 
@@ -198,12 +199,12 @@ def run_exp2(n_samples: int = 256, epochs: int = 10, batch_size: int = 64):
     X = sample_se3_vectors(n_samples)
 
     # Euclidean 128-d ---------------------------------------------------
-    enc_e, dec_e, mse_e = train_autoencoder(EucEncoder(), SharedDecoder(128), X, epochs, batch_size)
+    enc_e, _, _ = train_autoencoder(EucEncoder(), SharedDecoder(128), X, epochs, batch_size)
     with torch.no_grad():
         dist_e = distortion(enc_e(X), X).item()
 
     # Hyperbolic 8-d ----------------------------------------------------
-    enc_h, dec_h, mse_h = train_autoencoder(HypEncoder(), SharedDecoder(8), X, epochs, batch_size)
+    enc_h, _, _ = train_autoencoder(HypEncoder(), SharedDecoder(8), X, epochs, batch_size)
     with torch.no_grad():
         dist_h = distortion(enc_h(X), X).item()
 
@@ -231,7 +232,7 @@ def run_exp3(n_segments: int = 200):
     print("===== EXPERIMENT-3  Adaptive Scheduler ablation =====")
     sched_fixed = AdaptiveScheduler(min_steps=20, K_max=20, tau_easy=0, tau_hard=1, K_skip=0)
     sched_cache = AdaptiveScheduler(min_steps=2, K_max=20, tau_easy=0.2, tau_hard=0.8, K_skip=12)
-    sched_ads   = AdaptiveScheduler()  # default
+    sched_ads = AdaptiveScheduler()  # default
 
     scheds = {"Fixed20": sched_fixed, "DeepCache": sched_cache, "ADS": sched_ads}
 
@@ -250,6 +251,7 @@ def run_exp3(n_segments: int = 200):
 
     fig, ax = plt.subplots(figsize=(3, 2))
     sns.violinplot(data=[records[k]["steps"] for k in scheds], ax=ax)
+    ax.set_xticks(range(len(scheds)))  # fixed locator before setting labels
     ax.set_xticklabels(list(scheds.keys()))
     ax.set_ylabel("Allocated steps")
     ax.set_title("ADS vs baselines")
