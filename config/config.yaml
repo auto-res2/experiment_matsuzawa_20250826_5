@@ -1,6 +1,6 @@
 # Default configuration for DF-Diff toy experiments
 # Paths
-images_dir: .research/iteration2/images
+images_dir: .research/iteration3/images
 results_dir: .research/iteration2
 models_dir: models
 

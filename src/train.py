@@ -211,8 +211,13 @@ class DFDiffUNetWrapper(nn.Module):
         self.feature_dims = feature_dims
         self.delta_blocks = nn.ModuleList([DeltaUpdater(d, mlp_mult=delta_mult) for d in feature_dims])
         self.routers = nn.ModuleList([BinaryRouter(d) for d in feature_dims])
+        # Project the teacher's time embedding (output dim is base.c) into each feature dim
+        t_in = getattr(self.base, "c", None)
+        if t_in is None:
+            # Fallback: infer from the last MLP layer
+            t_in = self.base.time_mlp2.out_features
         self.t_proj = nn.ModuleList([
-            nn.Sequential(nn.Linear(self.base.time_embed_dim, d), nn.SiLU(), nn.Linear(d, d))
+            nn.Sequential(nn.Linear(t_in, d), nn.SiLU(), nn.Linear(d, d))
             for d in feature_dims
         ])
         self.quant = PerChannelQuant(nbits=feature_bits)
@@ -284,7 +289,7 @@ class TrainConfig:
     seed: int = 123
     device: str = "auto"
     fp16: bool = False
-    images_dir: str = ".research/iteration2/images"
+    images_dir: str = ".research/iteration3/images"
     models_dir: str = "models"
 
 

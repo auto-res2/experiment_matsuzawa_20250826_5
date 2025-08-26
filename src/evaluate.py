@@ -224,7 +224,7 @@ class RunConfig:
     batch: int = 1
     fp16: bool = False
     device: str = "auto"
-    images_dir: str = ".research/iteration2/images"
+    images_dir: str = ".research/iteration3/images"
     results_dir: str = ".research/iteration2"
     # DF-Diff specific
     feature_bits: int = 8
@@ -243,7 +243,7 @@ class QualityCfg:
     feature_bits: int = 8
     router_lambda: float = 1e-3
     delta_mult: float = 1.0
-    images_dir: str = ".research/iteration2/images"
+    images_dir: str = ".research/iteration3/images"
     results_dir: str = ".research/iteration2"
 
 
@@ -254,7 +254,7 @@ class RobustCfg:
     batch: int = 1
     device: str = "auto"
     fp16: bool = False
-    images_dir: str = ".research/iteration2/images"
+    images_dir: str = ".research/iteration3/images"
     results_dir: str = ".research/iteration2"
 
 # -----------------------------------------------------------------------------
